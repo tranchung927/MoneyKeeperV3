@@ -20,18 +20,26 @@ class RecordsTableVC: UITableViewController {
         textFieldCalculator.rightView = unitRightView
         textFieldCalculator.rightViewMode = .always
         textFieldCalculator.delegate = self
-        NotificationCenter.default.addObserver(self, selector: #selector(hiddenKeyBoard), name: NotificationKey.hide, object: nil)
-        
+        registerNotificationHideKeyBoard()
+        registerTextField()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func registerTextField(){
+        NotificationCenter.default.addObserver(self, selector: #selector(getTextFieldData), name: NotificationKey.calculator, object: nil)
+    }
+    func registerNotificationHideKeyBoard(){
+        NotificationCenter.default.addObserver(self, selector: #selector(hiddenKeyBoard), name: NotificationKey.hide, object: nil)
+    }
     func hiddenKeyBoard() {
         textFieldCalculator.resignFirstResponder()
     }
-    
+    func getTextFieldData(notification: Notification){
+        let string = notification.object as! String
+        textFieldCalculator.text = string
+    }
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -39,16 +47,16 @@ class RecordsTableVC: UITableViewController {
 
 extension RecordsTableVC: UITextFieldDelegate{
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        NotificationCenter.default.post(name: NotificationKey.name, object: nil)
+        NotificationCenter.default.post(name: NotificationKey.appear, object: nil)
         return true
     }
 }
-extension RecordsTableVC: CalculatorVCDelegate {
-    func passData(content: String) {
-        textFieldCalculator.text = content
-    }
-    
-    func disableEditText() {
-        textFieldCalculator.resignFirstResponder()
-    }
-}
+//extension RecordsTableVC: CalculatorVCDelegate {
+//    func passData(content: String) {
+//        textFieldCalculator.text = content
+//    }
+//    
+//    func disableEditText() {
+//        textFieldCalculator.resignFirstResponder()
+//    }
+//}

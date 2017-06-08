@@ -8,10 +8,10 @@
 
 import UIKit
 
-struct SegueIdentifier {
-    static let calculatorVC = "CalculatorViewController"
-    static let pageVC = "RecordsTableViewController"
-}
+//struct SegueIdentifier {
+//    static let calculatorVC = "CalculatorViewController"
+//    static let pageVC = "RecordsTableViewController"
+//}
 
 class RecordsVC: UIViewController {
     
@@ -51,7 +51,7 @@ class RecordsVC: UIViewController {
     }
     
     func registerNotificationAppearKeyBoard() {
-        NotificationCenter.default.addObserver(self, selector: #selector(appearKeyBoard), name: NotificationKey.name, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(appearKeyBoard), name: NotificationKey.appear, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(hideKeyBoard), name: NotificationKey.hide, object: nil)
     }
     
@@ -74,7 +74,7 @@ class RecordsVC: UIViewController {
             self.view.layoutIfNeeded()
         })
     }
-    
+    /*
     //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier ?? "" {
@@ -85,7 +85,7 @@ class RecordsVC: UIViewController {
         default:
             break
         }
-    }
+    } */
 }
 
 extension RecordsVC {

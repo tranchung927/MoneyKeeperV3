@@ -9,6 +9,7 @@
 import Foundation
 
 struct NotificationKey {
-    static let name = Notification.Name.init("name")
+    static let appear = Notification.Name.init("appear")
     static let hide = Notification.Name.init("hide")
+    static let calculator = Notification.Name.init("calculator")
 }

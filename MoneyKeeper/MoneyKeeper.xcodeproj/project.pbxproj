@@ -18,7 +18,7 @@
 		F28A35051EDD79A10043D70D /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A35041EDD79A10043D70D /* CalculatorVC.swift */; };
 		F2B4FA9A1EDD6F710032F205 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */; };
 		F2B4FA9C1EDD753B0032F205 /* RecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA9B1EDD753B0032F205 /* RecordsVC.swift */; };
-		F2B4FA9E1EDD75F50032F205 /* RecordsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA9D1EDD75F50032F205 /* RecordsTableVC.swift */; };
+		F2B4FA9E1EDD75F50032F205 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA9D1EDD75F50032F205 /* Expense.swift */; };
 		F2B4FAA01EDD766F0032F205 /* NotificationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA9F1EDD766F0032F205 /* NotificationKey.swift */; };
 		F2C3AB1D1EDD595700D1F39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C3AB1C1EDD595700D1F39B /* AppDelegate.swift */; };
 		F2C3AB221EDD595700D1F39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C3AB201EDD595700D1F39B /* Main.storyboard */; };
@@ -57,7 +57,7 @@
 		F28A35041EDD79A10043D70D /* CalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
 		F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonCustom.swift; path = ../ButtonCustom.swift; sourceTree = "<group>"; };
 		F2B4FA9B1EDD753B0032F205 /* RecordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsVC.swift; sourceTree = "<group>"; };
-		F2B4FA9D1EDD75F50032F205 /* RecordsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsTableVC.swift; sourceTree = "<group>"; };
+		F2B4FA9D1EDD75F50032F205 /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		F2B4FA9F1EDD766F0032F205 /* NotificationKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationKey.swift; sourceTree = "<group>"; };
 		F2C3AB191EDD595700D1F39B /* MoneyKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C3AB1C1EDD595700D1F39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F23EBD8D1EEA966B005C0318 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F287D8691EE7819800E45E43 /* SideMenuRecords.swift */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
 		F27CF35C1EEA12370037F241 /* PageViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +119,7 @@
 		F28A35061EDD7E560043D70D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F28A35091EDD7EAA0043D70D /* Container */,
-				F28A35071EDD7E720043D70D /* KeyBoard */,
+				F28A35091EDD7EAA0043D70D /* ContainerRecords */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -131,24 +138,27 @@
 				F211EA061EE6B1B100E1859C /* ShadowView.swift */,
 				F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */,
 				F2B4FA9F1EDD766F0032F205 /* NotificationKey.swift */,
+				F2C3AB231EDD595700D1F39B /* Assets.xcassets */,
+				F2C3AB281EDD595700D1F39B /* Info.plist */,
 			);
 			name = Support;
 			sourceTree = "<group>";
 		};
-		F28A35091EDD7EAA0043D70D /* Container */ = {
+		F28A35091EDD7EAA0043D70D /* ContainerRecords */ = {
 			isa = PBXGroup;
 			children = (
 				F2B4FA9B1EDD753B0032F205 /* RecordsVC.swift */,
-				F287D8691EE7819800E45E43 /* SideMenuRecords.swift */,
+				F28A35071EDD7E720043D70D /* KeyBoard */,
+				F23EBD8D1EEA966B005C0318 /* SideMenu */,
 				F27CF35C1EEA12370037F241 /* PageViewController */,
 			);
-			name = Container;
+			name = ContainerRecords;
 			sourceTree = "<group>";
 		};
 		F28A350A1EDD7ECA0043D70D /* MenuTab */ = {
 			isa = PBXGroup;
 			children = (
-				F2B4FA9D1EDD75F50032F205 /* RecordsTableVC.swift */,
+				F2B4FA9D1EDD75F50032F205 /* Expense.swift */,
 			);
 			name = MenuTab;
 			sourceTree = "<group>";
@@ -190,11 +200,9 @@
 				F20FDA541EE94C8100180D36 /* BluVC.swift */,
 				F20FDA561EE94C9500180D36 /* RedVC.swift */,
 				F20FDA581EE94CAF00180D36 /* GreenVC.swift */,
-				F28A350B1EDD7F100043D70D /* StoryBoard */,
 				F28A35061EDD7E560043D70D /* Controller */,
 				F28A35081EDD7E870043D70D /* Support */,
-				F2C3AB231EDD595700D1F39B /* Assets.xcassets */,
-				F2C3AB281EDD595700D1F39B /* Info.plist */,
+				F28A350B1EDD7F100043D70D /* StoryBoard */,
 			);
 			path = MoneyKeeper;
 			sourceTree = "<group>";
@@ -352,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2B4FA9E1EDD75F50032F205 /* RecordsTableVC.swift in Sources */,
+				F2B4FA9E1EDD75F50032F205 /* Expense.swift in Sources */,
 				F2B4FA9A1EDD6F710032F205 /* ButtonCustom.swift in Sources */,
 				F20FDA591EE94CAF00180D36 /* GreenVC.swift in Sources */,
 				F20FDA531EE94C1300180D36 /* BaseModelController.swift in Sources */,

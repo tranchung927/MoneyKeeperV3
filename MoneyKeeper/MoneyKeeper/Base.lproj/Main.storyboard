@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="-352" y="-1102"/>
         </scene>
-        <!--UIViewController-gZ3-es-65m-->
+        <!--RecordsTabBar-->
         <scene sceneID="Z0S-Nc-Ir9">
             <objects>
-                <viewControllerPlaceholder storyboardName="Records" referencedIdentifier="UIViewController-gZ3-es-65m" id="wqk-ym-IdM" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Records" referencedIdentifier="RecordsTabBar" id="wqk-ym-IdM" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="0LN-hJ-eN3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdG-wg-M1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="1002" y="-985"/>
         </scene>
-        <!--RecordsTableVC-->
+        <!--Expense-->
         <scene sceneID="FQF-BR-DDo">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RecordsTableVC" storyboardName="Records" referencedIdentifier="RecordsTableVC" id="e53-Ab-CIU" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Expense" storyboardName="Records" referencedIdentifier="Expense" id="e53-Ab-CIU" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4o-6c-CKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1032" y="-1198"/>

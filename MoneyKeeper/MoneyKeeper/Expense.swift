@@ -8,13 +8,15 @@
 
 import UIKit
 
-class RecordsTableVC: UITableViewController {
-    static var instance: RecordsTableVC {
+class Expense: UITableViewController {
+    static var instance: Expense {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: "RecordsTableVC") as! RecordsTableVC
+        return storyboard.instantiateViewController(withIdentifier: "Expense") as! Expense
     }
+    @IBOutlet weak var borrowToPay: UIButton!
     @IBOutlet weak var unitRightView: UIView!
     @IBOutlet weak var textFieldCalculator: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         textFieldCalculator.rightView = unitRightView
@@ -40,12 +42,21 @@ class RecordsTableVC: UITableViewController {
         let string = notification.object as! String
         textFieldCalculator.text = string
     }
+    @IBAction func borrowToPay(_ sender: Any) {
+        if borrowToPay.isSelected {
+            borrowToPay.setImage(UIImage(named:"Checked"), for: .normal)
+            borrowToPay.isSelected = false
+        }else {
+            borrowToPay.setImage(UIImage(named:"Unchecked"), for: .selected)
+            borrowToPay.isSelected = true
+        }
+    }
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
 }
 
-extension RecordsTableVC: UITextFieldDelegate{
+extension Expense: UITextFieldDelegate{
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         NotificationCenter.default.post(name: NotificationKey.appear, object: nil)
         return true

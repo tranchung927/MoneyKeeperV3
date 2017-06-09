@@ -36,7 +36,7 @@ class RecordsVC: UIViewController {
     @IBOutlet weak var corverButton: UIButton!
     @IBOutlet weak var bottomKeyBoard: NSLayoutConstraint!
     @IBOutlet weak var keyBoardContainer: UIView!
-    
+    @IBOutlet weak var onClickMenu: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bottomKeyBoard.constant = -self.keyBoardContainer.bounds.height
@@ -47,6 +47,7 @@ class RecordsVC: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     
@@ -85,13 +86,33 @@ class RecordsVC: UIViewController {
             pageVC = segue.destination as? PageVC
         case SegueIdentifier.sideMenuVC:
             sideMenuVC = segue.destination as? SideMenuRecords
-            sideMenuVC?.delegate = pageVC
+            sideMenuVC?.delegate = self
         default:
             break
         }
     }
 }
-
+extension RecordsVC: SideMenuRecordsDelegate {
+    
+    func passData(indexOf: Int) {
+        switch indexOf {
+        case 1:
+            pageVC?.jump(toIndex: 0)
+        case 2:
+            pageVC?.jump(toIndex: 1)
+        case 3:
+            pageVC?.jump(toIndex: 2)
+        case 4:
+            pageVC?.jump(toIndex: 3)
+        default:
+            return
+        }
+    }
+    func passedNameTitleMenu(name: String) {
+        onClickMenu.titleLabel?.text = name
+    }
+    
+}
 extension RecordsVC {
     func configForSideMenuOpeningState() {
         self.sideMenuViewContainer.clipsToBounds = false

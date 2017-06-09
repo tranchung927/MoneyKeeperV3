@@ -26,18 +26,31 @@ class SideMenuRecords: UITableViewController {
         NotificationCenter.default.post(name: NotificationKey.hideSideMenu, object: nil)
         switch indexPath.row {
         case 0:
-            delegate?.passData(content: 1)
+            delegate?.passData(indexOf: 1)
+            let cell = tableView.cellForRow(at: indexPath)
+            let text = cell?.textLabel?.text
+            delegate?.passedNameTitleMenu(name: text!)
         case 1:
-            delegate?.passData(content: 2)
+            delegate?.passData(indexOf: 2)
+            let cell = tableView.cellForRow(at: indexPath)
+            let text = cell?.textLabel?.text
+            delegate?.passedNameTitleMenu(name: text!)
         case 2:
-            delegate?.passData(content: 3)
+            delegate?.passData(indexOf: 3)
+            let cell = tableView.cellForRow(at: indexPath)
+            let text = cell?.textLabel?.text
+            delegate?.passedNameTitleMenu(name: text!)
         case 3:
-            delegate?.passData(content: 4)
+            delegate?.passData(indexOf: 4)
+            let cell = tableView.cellForRow(at: indexPath)
+            let text = cell?.textLabel?.text
+            delegate?.passedNameTitleMenu(name: text!)
         default:
             return
         }
     }
 }
 protocol SideMenuRecordsDelegate {
-    func passData(content: Int)
+    func passData(indexOf: Int)
+    func passedNameTitleMenu(name: String)
 }

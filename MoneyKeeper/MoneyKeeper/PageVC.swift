@@ -46,19 +46,3 @@ class PageVC: UIPageViewController, UIPageViewControllerDelegate {
         }
     }
 }
-extension PageVC: SideMenuRecordsDelegate {
-    func passData(content: Int) {
-        switch content {
-        case 1:
-            jump(toIndex: 0)
-        case 2:
-            jump(toIndex: index + 1)
-        case 3:
-            jump(toIndex: index + 2)
-        case 4:
-            jump(toIndex: index + 3)
-        default:
-            return
-        }
-    }
-}

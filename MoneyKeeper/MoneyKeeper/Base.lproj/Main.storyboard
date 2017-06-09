@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tài khoản-->
+        <!--Accounts-->
         <scene sceneID="sKZ-gu-WEX">
             <objects>
                 <viewController id="YSq-bH-EmY" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tài khoản" image="Taikhoan_light" selectedImage="Taikhoan_hightlight" id="ON2-BW-NVV"/>
+                    <tabBarItem key="tabBarItem" title="Accounts" image="Taikhoan_light" selectedImage="Taikhoan_hightlight" id="ON2-BW-NVV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4eh-n6-0bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="-1217" y="235"/>
         </scene>
-        <!--Hạn chi mức-->
+        <!--Budget-->
         <scene sceneID="80H-eg-e3c">
             <objects>
                 <viewController id="cAE-Yi-235" sceneMemberID="viewController">
@@ -63,13 +63,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hạn chi mức" image="HanMuc_light" selectedImage="HanMuc_hightlight" id="xSd-6L-eZJ"/>
+                    <tabBarItem key="tabBarItem" title="Budget" image="HanMuc_light" selectedImage="HanMuc_hightlight" id="xSd-6L-eZJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhM-wC-nXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-371" y="-248"/>
         </scene>
-        <!--Báo cáo-->
+        <!--Reports-->
         <scene sceneID="Hb6-cm-CoO">
             <objects>
                 <viewController id="2z2-p9-dUk" sceneMemberID="viewController">
@@ -82,13 +82,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Báo cáo" image="BaoCao_light" selectedImage="BaoCao_hightlight" id="Zg5-di-SOo"/>
+                    <tabBarItem key="tabBarItem" title="Reports" image="BaoCao_light" selectedImage="BaoCao_hightlight" id="Zg5-di-SOo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfT-kv-d2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-371" y="2"/>
         </scene>
-        <!--Tiện ích-->
+        <!--More-->
         <scene sceneID="4Vo-nz-HKs">
             <objects>
                 <viewController id="afw-pJ-1vH" sceneMemberID="viewController">
@@ -101,17 +101,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tiện ích" image="More_light" selectedImage="More_hightlight" id="e9p-4g-1jU"/>
+                    <tabBarItem key="tabBarItem" title="More" image="More_light" selectedImage="More_hightlight" id="e9p-4g-1jU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHN-YB-4KY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-362" y="247"/>
+            <point key="canvasLocation" x="-419" y="690"/>
         </scene>
-        <!--Ghi chép-->
+        <!--Records-->
         <scene sceneID="cJd-M0-1bQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NpF-JM-anh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Ghi chép" image="GhiChep_light" selectedImage="GhiChep_hightlight" id="tvp-Wx-ze8"/>
+                    <tabBarItem key="tabBarItem" title="Records" image="GhiChep_light" selectedImage="GhiChep_hightlight" id="tvp-Wx-ze8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cfP-S4-QtV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

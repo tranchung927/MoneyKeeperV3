@@ -39,6 +39,7 @@ class RecordsVC: UIViewController {
     @IBOutlet weak var onClickMenu: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        onClickMenu.setTitle("Expence", for: UIControlState.normal)
         self.bottomKeyBoard.constant = -self.keyBoardContainer.bounds.height
         isSideMenuOpen = false
         registerNotificationAppearKeyBoard()
@@ -109,7 +110,7 @@ extension RecordsVC: SideMenuRecordsDelegate {
         }
     }
     func passedNameTitleMenu(name: String) {
-        onClickMenu.titleLabel?.text = name
+        onClickMenu.setTitle(name, for: UIControlState.normal)
     }
     
 }

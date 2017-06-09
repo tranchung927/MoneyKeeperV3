@@ -96,6 +96,7 @@ class RecordsVC: UIViewController {
 extension RecordsVC: SideMenuRecordsDelegate {
     
     func passData(indexOf: Int) {
+        isSideMenuOpen = false
         switch indexOf {
         case 1:
             pageVC?.jump(toIndex: 0)

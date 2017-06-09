@@ -8,14 +8,14 @@
 
 import UIKit
 
-//struct SegueIdentifier {
-//    static let calculatorVC = "CalculatorViewController"
-//    static let pageVC = "RecordsTableViewController"
-//}
+struct SegueIdentifier {
+    static let sideMenuVC = "SideMenuController"
+    static let pageVC = "RecordsTableViewController"
+}
 
 class RecordsVC: UIViewController {
     
-    var calculatorVC: CalculatorVC?
+    var sideMenuVC: SideMenuRecords?
     var pageVC: PageVC?
     var isSideMenuOpen: Bool = true {
         didSet {
@@ -40,7 +40,6 @@ class RecordsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bottomKeyBoard.constant = -self.keyBoardContainer.bounds.height
-        //self.topSideMenu.constant = -self.sideMenuViewContainer.bounds.height
         isSideMenuOpen = false
         registerNotificationAppearKeyBoard()
     }
@@ -74,18 +73,19 @@ class RecordsVC: UIViewController {
             self.view.layoutIfNeeded()
         })
     }
-    /*
+
     //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier ?? "" {
         case SegueIdentifier.pageVC:
             pageVC = segue.destination as? PageVC
-        case SegueIdentifier.calculatorVC:
-            calculatorVC = segue.destination as? CalculatorVC
+        case SegueIdentifier.sideMenuVC:
+            sideMenuVC = segue.destination as? SideMenuRecords
+            sideMenuVC?.delegate = pageVC
         default:
             break
         }
-    } */
+    }
 }
 
 extension RecordsVC {

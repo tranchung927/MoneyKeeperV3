@@ -51,12 +51,4 @@ extension RecordsTableVC: UITextFieldDelegate{
         return true
     }
 }
-//extension RecordsTableVC: CalculatorVCDelegate {
-//    func passData(content: String) {
-//        textFieldCalculator.text = content
-//    }
-//    
-//    func disableEditText() {
-//        textFieldCalculator.resignFirstResponder()
-//    }
-//}
+

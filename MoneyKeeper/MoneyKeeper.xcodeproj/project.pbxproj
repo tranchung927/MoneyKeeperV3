@@ -113,7 +113,6 @@
 			children = (
 				F28A35091EDD7EAA0043D70D /* Container */,
 				F28A35071EDD7E720043D70D /* KeyBoard */,
-				F287D8691EE7819800E45E43 /* SideMenuRecords.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -140,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F2B4FA9B1EDD753B0032F205 /* RecordsVC.swift */,
+				F287D8691EE7819800E45E43 /* SideMenuRecords.swift */,
 				F27CF35C1EEA12370037F241 /* PageViewController */,
 			);
 			name = Container;

@@ -8,25 +8,15 @@
 
 import UIKit
 
-//protocol CalculatorVCDelegate {
-//    func passData(content: String)
-//    func disableEditText()
-//}
-
 class CalculatorVC: UIViewController {
-    //var delegate: CalculatorVCDelegate?
     var firstNumberText = ""
     var secondNumberText = ""
     var op = ""
     var isFirstNumber = true
     var hasOp = false
     var canClear = true
-    var resultDataLabel: String = "" /*{
-        didSet {
-            delegate?.passData(content: resultDataLabel)
-        }
-    }
-*/
+    var resultDataLabel: String = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

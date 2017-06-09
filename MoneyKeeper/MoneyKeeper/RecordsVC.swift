@@ -42,6 +42,7 @@ class RecordsVC: UIViewController {
         self.bottomKeyBoard.constant = -self.keyBoardContainer.bounds.height
         isSideMenuOpen = false
         registerNotificationAppearKeyBoard()
+        registerNotificationSideMenu()
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,6 +53,9 @@ class RecordsVC: UIViewController {
     func registerNotificationAppearKeyBoard() {
         NotificationCenter.default.addObserver(self, selector: #selector(appearKeyBoard), name: NotificationKey.appear, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(hideKeyBoard), name: NotificationKey.hide, object: nil)
+    }
+    func registerNotificationSideMenu() {
+        NotificationCenter.default.addObserver(self, selector: #selector(configForSideMenuClosingState), name: NotificationKey.hideSideMenu, object: nil)
     }
     
     deinit {

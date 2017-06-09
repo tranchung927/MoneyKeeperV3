@@ -23,6 +23,7 @@ class SideMenuRecords: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NotificationCenter.default.post(name: NotificationKey.hideSideMenu, object: nil)
         switch indexPath.row {
         case 0:
             delegate?.passData(content: 1)

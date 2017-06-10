@@ -504,7 +504,23 @@ kiện</string>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWZ-aN-RfT">
                                                     <rect key="frame" x="8" y="0.0" width="403" height="54.666666666666664"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Người cho vay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUi-LY-n1P">
+                                                            <rect key="frame" x="10" y="0.0" width="200" height="54.666666666666664"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="200" id="FEf-an-5sa"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="sUi-LY-n1P" firstAttribute="top" secondItem="fWZ-aN-RfT" secondAttribute="top" id="BRf-ec-b3L"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sUi-LY-n1P" secondAttribute="bottom" id="i0f-M2-QuC"/>
+                                                        <constraint firstItem="sUi-LY-n1P" firstAttribute="leading" secondItem="fWZ-aN-RfT" secondAttribute="leading" constant="10" id="pRH-sI-bbG"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

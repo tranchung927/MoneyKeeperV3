@@ -64,23 +64,7 @@ class RecordsVC: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
-    func hideKeyBoard() {
-        self.keyBoardContainer.clipsToBounds = true
-        self.bottomKeyBoard.constant = -self.keyBoardContainer.bounds.height
-        UIView.animate(withDuration: 0.3, animations: {
-            self.view.layoutIfNeeded()
-        })
-    }
-    
-    func appearKeyBoard() {
-        self.keyBoardContainer.clipsToBounds = false
-        self.bottomKeyBoard.constant = 50
-        UIView.animate(withDuration: 0.35, animations: {
-            self.view.layoutIfNeeded()
-        })
-    }
-
-    //MARK: Navigation
+     //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier ?? "" {
         case SegueIdentifier.pageVC:
@@ -91,49 +75,5 @@ class RecordsVC: UIViewController {
         default:
             break
         }
-    }
-}
-extension RecordsVC: SideMenuRecordsDelegate {
-    
-    func passData(indexOf: Int) {
-        isSideMenuOpen = false
-        switch indexOf {
-        case 1:
-            pageVC?.jump(toIndex: 0)
-        case 2:
-            pageVC?.jump(toIndex: 1)
-        case 3:
-            pageVC?.jump(toIndex: 2)
-        case 4:
-            pageVC?.jump(toIndex: 3)
-        default:
-            return
-        }
-    }
-    func passedNameTitleMenu(name: String) {
-        onClickMenu.setTitle(name, for: UIControlState.normal)
-    }
-    
-}
-extension RecordsVC {
-    func configForSideMenuOpeningState() {
-        self.sideMenuViewContainer.clipsToBounds = false
-        self.topSideMenu.constant = 0
-        self.corverButton.alpha = 0.5
-        self.corverButton.isHidden = false
-    }
-    func configForSideMenuClosingState() {
-        self.sideMenuViewContainer.clipsToBounds = true
-        self.topSideMenu.constant = -self.sideMenuViewContainer.bounds.height
-        self.corverButton.alpha = 0
-        self.corverButton.isHidden = true
-    }
-    
-    @IBAction func onClickCorverButton(_ sender: Any) {
-        isSideMenuOpen = !isSideMenuOpen
-    }
-    
-    @IBAction func onClickMenu(_ sender: Any) {
-        isSideMenuOpen = !isSideMenuOpen
     }
 }

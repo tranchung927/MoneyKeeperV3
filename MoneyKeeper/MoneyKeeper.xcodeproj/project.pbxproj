@@ -14,7 +14,8 @@
 		F20FDA591EE94CAF00180D36 /* GreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20FDA581EE94CAF00180D36 /* GreenVC.swift */; };
 		F211EA071EE6B1B100E1859C /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211EA061EE6B1B100E1859C /* ShadowView.swift */; };
 		F27CF35B1EEA10B90037F241 /* Records.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27CF3591EEA10B90037F241 /* Records.storyboard */; };
-		F283E7A41EEB89D500E65410 /* CellIdentifierEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F283E7A31EEB89D500E65410 /* CellIdentifierEnum.swift */; };
+		F283E7A61EEB9C2B00E65410 /* RecordsVC+SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F283E7A51EEB9C2B00E65410 /* RecordsVC+SideMenu.swift */; };
+		F283E7A81EEB9C4800E65410 /* RecordsVC + KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F283E7A71EEB9C4800E65410 /* RecordsVC + KeyBoard.swift */; };
 		F287D86A1EE7819800E45E43 /* SideMenuRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287D8691EE7819800E45E43 /* SideMenuRecords.swift */; };
 		F28A35051EDD79A10043D70D /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A35041EDD79A10043D70D /* CalculatorVC.swift */; };
 		F2B4FA9A1EDD6F710032F205 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */; };
@@ -54,7 +55,8 @@
 		F20FDA581EE94CAF00180D36 /* GreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenVC.swift; sourceTree = "<group>"; };
 		F211EA061EE6B1B100E1859C /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		F27CF35A1EEA10B90037F241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Records.storyboard; sourceTree = "<group>"; };
-		F283E7A31EEB89D500E65410 /* CellIdentifierEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellIdentifierEnum.swift; sourceTree = "<group>"; };
+		F283E7A51EEB9C2B00E65410 /* RecordsVC+SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordsVC+SideMenu.swift"; sourceTree = "<group>"; };
+		F283E7A71EEB9C4800E65410 /* RecordsVC + KeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordsVC + KeyBoard.swift"; sourceTree = "<group>"; };
 		F287D8691EE7819800E45E43 /* SideMenuRecords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuRecords.swift; sourceTree = "<group>"; };
 		F28A35041EDD79A10043D70D /* CalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
 		F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonCustom.swift; path = ../ButtonCustom.swift; sourceTree = "<group>"; };
@@ -140,7 +142,6 @@
 				F211EA061EE6B1B100E1859C /* ShadowView.swift */,
 				F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */,
 				F2B4FA9F1EDD766F0032F205 /* NotificationKey.swift */,
-				F283E7A31EEB89D500E65410 /* CellIdentifierEnum.swift */,
 				F2C3AB231EDD595700D1F39B /* Assets.xcassets */,
 				F2C3AB281EDD595700D1F39B /* Info.plist */,
 			);
@@ -151,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				F2B4FA9B1EDD753B0032F205 /* RecordsVC.swift */,
+				F283E7A51EEB9C2B00E65410 /* RecordsVC+SideMenu.swift */,
+				F283E7A71EEB9C4800E65410 /* RecordsVC + KeyBoard.swift */,
 				F28A35071EDD7E720043D70D /* KeyBoard */,
 				F23EBD8D1EEA966B005C0318 /* SideMenu */,
 				F27CF35C1EEA12370037F241 /* PageViewController */,
@@ -162,6 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				F2B4FA9D1EDD75F50032F205 /* Expense.swift */,
+				F20FDA541EE94C8100180D36 /* BluVC.swift */,
+				F20FDA561EE94C9500180D36 /* RedVC.swift */,
+				F20FDA581EE94CAF00180D36 /* GreenVC.swift */,
 			);
 			name = MenuTab;
 			sourceTree = "<group>";
@@ -200,9 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				F2C3AB1C1EDD595700D1F39B /* AppDelegate.swift */,
-				F20FDA541EE94C8100180D36 /* BluVC.swift */,
-				F20FDA561EE94C9500180D36 /* RedVC.swift */,
-				F20FDA581EE94CAF00180D36 /* GreenVC.swift */,
 				F28A35061EDD7E560043D70D /* Controller */,
 				F28A35081EDD7E870043D70D /* Support */,
 				F28A350B1EDD7F100043D70D /* StoryBoard */,
@@ -372,10 +375,11 @@
 				F287D86A1EE7819800E45E43 /* SideMenuRecords.swift in Sources */,
 				F2C3AB1D1EDD595700D1F39B /* AppDelegate.swift in Sources */,
 				F28A35051EDD79A10043D70D /* CalculatorVC.swift in Sources */,
-				F283E7A41EEB89D500E65410 /* CellIdentifierEnum.swift in Sources */,
 				F20FDA551EE94C8100180D36 /* BluVC.swift in Sources */,
 				F20FDA511EE94BE900180D36 /* PageVC.swift in Sources */,
+				F283E7A81EEB9C4800E65410 /* RecordsVC + KeyBoard.swift in Sources */,
 				F20FDA571EE94C9500180D36 /* RedVC.swift in Sources */,
+				F283E7A61EEB9C2B00E65410 /* RecordsVC+SideMenu.swift in Sources */,
 				F211EA071EE6B1B100E1859C /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

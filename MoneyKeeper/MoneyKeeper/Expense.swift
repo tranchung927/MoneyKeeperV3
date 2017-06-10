@@ -50,9 +50,39 @@ class Expense: UITableViewController {
             borrowToPay.setImage(UIImage(named:"Unchecked"), for: .selected)
             borrowToPay.isSelected = true
         }
+//        tableView.reloadRows(at: [IndexPath.init(row: CellIndex.lender.rawValue, section: 0)], with: .automatic)
+        tableView.reloadData()
     }
     deinit {
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    enum CellIndex : Int {
+        case texFieldCalculator
+        case distance1
+        case category
+        case description
+        case distance2
+        case account
+        case date
+        case payee
+        case event
+        case borrow
+        case lender
+        case save
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case CellIndex.texFieldCalculator.rawValue:
+            return 60
+        case CellIndex.lender.rawValue:
+            return borrowToPay.isSelected ? 0 : 55
+        case CellIndex.distance1.rawValue, CellIndex.distance2.rawValue:
+            return 8
+        default:
+            return 55
+        }
     }
 }
 

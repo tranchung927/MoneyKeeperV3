@@ -647,7 +647,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="50G-Uf-CAc"/>
+                                                    <action selector="clearButton:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="oo8-Vh-KbW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxz-if-sBL" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -667,7 +667,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="SH0-sD-bFQ"/>
+                                                    <action selector="performOperation:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="fVT-wm-4oF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J36-vE-8rQ" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -687,7 +687,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="c8F-Di-3ZJ"/>
+                                                    <action selector="performOperation:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="NFS-aF-cgQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0n-Se-Ozr" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -707,7 +707,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="Wce-XM-Lhd"/>
+                                                    <action selector="deleteButton:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="mlJ-2m-12l"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -738,7 +738,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="eYg-SY-5PC"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="Zx7-nw-aPd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9e-hY-pOF" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -758,7 +758,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="ooR-At-Khl"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="e2i-SF-Pbo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd1-13-lC2" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -778,7 +778,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="Td1-bK-Cgk"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="6r2-BH-3l7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSy-tI-IEd" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -798,7 +798,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="nJS-2O-fWg"/>
+                                                    <action selector="performOperation:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="n0P-D0-Mud"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -829,7 +829,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="xID-rI-1lx"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="HOp-7f-FFw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB9-Ji-FEg" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -849,7 +849,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="YMN-79-awp"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="VVF-cD-5Cj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoj-R2-pfA" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -869,7 +869,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="MDd-cu-zfy"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="f79-3K-Dob"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNI-xb-dfk" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -889,7 +889,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="efN-yA-chX"/>
+                                                    <action selector="performOperation:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="CU3-s8-h03"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -920,7 +920,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="ogf-eH-z3B"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="C2w-dX-aQZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgw-F4-VlH" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -940,7 +940,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="arl-YQ-sBe"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="OEf-nk-gMw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbp-zW-tD1" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -960,7 +960,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="Whl-2C-CoR"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="uQ2-1e-rPR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDg-6V-hqQ" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -980,7 +980,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="0dh-O5-Oow"/>
+                                                    <action selector="performOperation:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="YAj-ai-Lrc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1011,7 +1011,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="0x7-Db-yGz"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="cW7-Us-CT6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ree-jT-hPQ" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -1031,7 +1031,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="KSg-Wj-RHh"/>
+                                                    <action selector="touchDigit:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="vKN-vH-OtY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcG-Xf-UZ3" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
@@ -1051,7 +1051,7 @@ kiện</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="handleButtonPress:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="D7r-3e-1eF"/>
+                                                    <action selector="performOperation:" destination="Caa-Gh-WkA" eventType="touchUpInside" id="eep-ca-My1"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oC-T2-DJY" userLabel="hideKeyBoard" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">

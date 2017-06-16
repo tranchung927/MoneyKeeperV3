@@ -13,6 +13,7 @@
 		F20FDA571EE94C9500180D36 /* RedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20FDA561EE94C9500180D36 /* RedVC.swift */; };
 		F20FDA591EE94CAF00180D36 /* GreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20FDA581EE94CAF00180D36 /* GreenVC.swift */; };
 		F211EA071EE6B1B100E1859C /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211EA061EE6B1B100E1859C /* ShadowView.swift */; };
+		F26DA25C1EF374A400351314 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26DA25B1EF374A400351314 /* CalculatorBrain.swift */; };
 		F27CF35B1EEA10B90037F241 /* Records.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27CF3591EEA10B90037F241 /* Records.storyboard */; };
 		F283E7A61EEB9C2B00E65410 /* RecordsVC+SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F283E7A51EEB9C2B00E65410 /* RecordsVC+SideMenu.swift */; };
 		F283E7A81EEB9C4800E65410 /* RecordsVC + KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F283E7A71EEB9C4800E65410 /* RecordsVC + KeyBoard.swift */; };
@@ -54,6 +55,7 @@
 		F20FDA561EE94C9500180D36 /* RedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedVC.swift; sourceTree = "<group>"; };
 		F20FDA581EE94CAF00180D36 /* GreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenVC.swift; sourceTree = "<group>"; };
 		F211EA061EE6B1B100E1859C /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		F26DA25B1EF374A400351314 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		F27CF35A1EEA10B90037F241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Records.storyboard; sourceTree = "<group>"; };
 		F283E7A51EEB9C2B00E65410 /* RecordsVC+SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordsVC+SideMenu.swift"; sourceTree = "<group>"; };
 		F283E7A71EEB9C4800E65410 /* RecordsVC + KeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordsVC + KeyBoard.swift"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F28A35041EDD79A10043D70D /* CalculatorVC.swift */,
+				F26DA25B1EF374A400351314 /* CalculatorBrain.swift */,
 			);
 			name = KeyBoard;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				F20FDA531EE94C1300180D36 /* BaseModelController.swift in Sources */,
 				F2B4FAA01EDD766F0032F205 /* NotificationKey.swift in Sources */,
 				F2B4FA9C1EDD753B0032F205 /* RecordsVC.swift in Sources */,
+				F26DA25C1EF374A400351314 /* CalculatorBrain.swift in Sources */,
 				F287D86A1EE7819800E45E43 /* SideMenuRecords.swift in Sources */,
 				F2C3AB1D1EDD595700D1F39B /* AppDelegate.swift in Sources */,
 				F28A35051EDD79A10043D70D /* CalculatorVC.swift in Sources */,

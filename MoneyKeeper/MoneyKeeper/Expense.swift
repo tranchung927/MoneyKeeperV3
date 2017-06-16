@@ -89,7 +89,7 @@ class Expense: UITableViewController {
 extension Expense: UITextFieldDelegate{
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         NotificationCenter.default.post(name: NotificationKey.appear, object: nil)
-        return false
+        return true
     }
 }
 

@@ -12,5 +12,5 @@ struct NotificationKey {
     static let appear = Notification.Name.init("appear")
     static let hide = Notification.Name.init("hide")
     static let calculator = Notification.Name.init("calculator")
-    static let hideSideMenu = Notification.Name.init("hideSideMenu")
+    static let sideMenu = Notification.Name.init("sideMenu")
 }

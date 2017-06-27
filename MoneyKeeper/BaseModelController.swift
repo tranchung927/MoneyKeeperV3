@@ -15,7 +15,7 @@ class BaseModelController: NSObject, UIPageViewControllerDataSource {
         let redVC = RedVC.instance
         let bluVC = BluVC.instance
         let expense = Expense.instance
-        let menuControllers = [expense, greenVC, redVC, bluVC]
+        let menuControllers = [expense, bluVC, redVC, greenVC]
         return menuControllers
     }()
     
@@ -27,7 +27,6 @@ class BaseModelController: NSObject, UIPageViewControllerDataSource {
             return nil
         }
         self.index = index
-        
         return viewcontrollers[index]
     }
     

@@ -13,8 +13,6 @@ struct CalculatorBrain {
     private var accumulator: Double?
     
     private enum Operation {
-//        case constant(Double)
-//        case unaryOperation((Double) -> Double)
         case binaryOperation((Double, Double) -> Double)
         case equals
     }
@@ -30,12 +28,6 @@ struct CalculatorBrain {
     mutating func performOperation(_ symbol: String) {
         guard let operation = operations[symbol] else { return }
         switch operation {
-//        case .constant(let value) :
-//            accumulator = value
-//        case .unaryOperation(let f):
-//            if let operand = accumulator {
-//                accumulator = f(operand)
-//            }
         case .binaryOperation(let f):
             if accumulator != nil {
                 pendingBinaryOperation = PendingBinaryOperation(function: f, firstOperand: accumulator!)

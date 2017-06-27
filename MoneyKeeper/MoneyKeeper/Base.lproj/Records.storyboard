@@ -31,7 +31,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5Z-zw-OOx">
-                                <rect key="frame" x="0.0" y="441" width="414" height="245"/>
+                                <rect key="frame" x="0.0" y="440.66666666666674" width="414" height="245.33333333333326"/>
                                 <connections>
                                     <segue destination="Caa-Gh-WkA" kind="embed" identifier="CalculatorViewController" id="ucS-0M-4de"/>
                                 </connections>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMg-Y5-diQ" customClass="ShadowView" customModule="MoneyKeeper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="414" height="245"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="245.33333333333331"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,15 +164,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="mjL-85-wkg">
-                            <rect key="frame" x="0.0" y="560" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="568" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <sections>
                             <tableViewSection id="UYx-yF-MtV">
                                 <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="8" id="2Tf-yr-O0V">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Tf-yr-O0V" id="Ycq-C1-eAB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="R3r-bl-gMy">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="8" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R3r-bl-gMy" id="RTN-DC-LPt">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -181,9 +190,8 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mO3-Bc-H3O">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                                     <subviews>
-                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="right" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Số tiền" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bv1-Mn-0eY" userLabel="Text Field Calculator">
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="right" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Số tiền" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bv1-Mn-0eY" userLabel="Text Field Calculator">
                                                             <rect key="frame" x="8" y="0.0" width="398" height="60"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -191,6 +199,12 @@
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Bv1-Mn-0eY" firstAttribute="top" secondItem="mO3-Bc-H3O" secondAttribute="top" id="5zh-ks-yML"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Bv1-Mn-0eY" secondAttribute="trailing" constant="8" id="Pqh-S7-Li8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Bv1-Mn-0eY" secondAttribute="bottom" id="eUU-s2-ZdC"/>
+                                                        <constraint firstItem="Bv1-Mn-0eY" firstAttribute="leading" secondItem="mO3-Bc-H3O" secondAttribute="leading" constant="8" id="tgz-L3-vcN"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -203,7 +217,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="8" id="DLe-c1-IHh">
-                                        <rect key="frame" x="0.0" y="60" width="414" height="8"/>
+                                        <rect key="frame" x="0.0" y="68" width="414" height="8"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DLe-c1-IHh" id="nR2-sy-Wrb">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
@@ -212,7 +226,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="3Sm-C7-leN">
-                                        <rect key="frame" x="0.0" y="68" width="414" height="55"/>
+                                        <rect key="frame" x="0.0" y="76" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Sm-C7-leN" id="3nO-pU-R8G">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="55"/>
@@ -246,7 +260,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="VBI-Uj-KXU">
-                                        <rect key="frame" x="0.0" y="123" width="414" height="55"/>
+                                        <rect key="frame" x="0.0" y="131" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VBI-Uj-KXU" id="oHN-sd-Q17">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="55"/>
@@ -280,7 +294,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="8" id="koG-Bn-eU9">
-                                        <rect key="frame" x="0.0" y="178" width="414" height="8"/>
+                                        <rect key="frame" x="0.0" y="186" width="414" height="8"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="koG-Bn-eU9" id="GUS-HJ-vJY">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
@@ -289,7 +303,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="QSo-0b-leH">
-                                        <rect key="frame" x="0.0" y="186" width="414" height="55"/>
+                                        <rect key="frame" x="0.0" y="194" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QSo-0b-leH" id="dKx-hO-7Eb">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="55"/>
@@ -339,7 +353,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="NYc-is-pdl">
-                                        <rect key="frame" x="0.0" y="241" width="414" height="55"/>
+                                        <rect key="frame" x="0.0" y="249" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NYc-is-pdl" id="j1c-1N-M6H">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="55"/>
@@ -389,7 +403,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="vdu-cY-zB4">
-                                        <rect key="frame" x="0.0" y="296" width="414" height="55"/>
+                                        <rect key="frame" x="0.0" y="304" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vdu-cY-zB4" id="t1a-5v-tUv">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="55"/>
@@ -427,7 +441,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="kYq-od-kpk">
-                                        <rect key="frame" x="0.0" y="351" width="414" height="55"/>
+                                        <rect key="frame" x="0.0" y="359" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kYq-od-kpk" id="7vR-XE-xIt">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="55"/>
@@ -467,7 +481,7 @@ kiện</string>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="ZVX-bb-Sqo">
-                                        <rect key="frame" x="0.0" y="406" width="414" height="55"/>
+                                        <rect key="frame" x="0.0" y="414" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZVX-bb-Sqo" id="8Nf-s2-6WT">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
@@ -497,17 +511,17 @@ kiện</string>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="5AK-RQ-zeg">
-                                        <rect key="frame" x="0.0" y="461" width="414" height="55"/>
+                                        <rect key="frame" x="0.0" y="469" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5AK-RQ-zeg" id="qP6-Ag-aP5">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWZ-aN-RfT">
-                                                    <rect key="frame" x="8" y="1" width="403" height="53.666666666666664"/>
+                                                    <rect key="frame" x="8" y="1" width="403" height="53"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Người cho vay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUi-LY-n1P">
-                                                            <rect key="frame" x="10" y="0.0" width="200" height="53.666666666666664"/>
+                                                            <rect key="frame" x="10" y="0.0" width="200" height="53"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="200" id="FEf-an-5sa"/>
                                                             </constraints>
@@ -535,7 +549,7 @@ kiện</string>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uki-Rw-rds">
-                                        <rect key="frame" x="0.0" y="516" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="524" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uki-Rw-rds" id="D5w-aj-0TP">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -620,11 +634,11 @@ kiện</string>
                         <viewControllerLayoutGuide type="bottom" id="R7C-RJ-aiX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PYl-Oa-er4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="245"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333326"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iHb-Lf-UAa">
-                                <rect key="frame" x="5" y="5" width="404" height="235"/>
+                                <rect key="frame" x="5" y="5" width="404" height="235.33333333333334"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5PM-Op-dlV">
                                         <rect key="frame" x="0.0" y="0.0" width="404" height="43"/>
@@ -810,10 +824,10 @@ kiện</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="924-0d-ENw">
-                                        <rect key="frame" x="0.0" y="96" width="404" height="43"/>
+                                        <rect key="frame" x="0.0" y="96" width="404" height="43.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeS-te-kGp" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="43.333333333333343"/>
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -833,7 +847,7 @@ kiện</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB9-Ji-FEg" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="43"/>
+                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="43.333333333333343"/>
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -853,7 +867,7 @@ kiện</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoj-R2-pfA" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666669" y="0.0" width="97.000000000000057" height="43"/>
+                                                <rect key="frame" x="204.66666666666669" y="0.0" width="97.000000000000057" height="43.333333333333343"/>
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -873,7 +887,7 @@ kiện</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNI-xb-dfk" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666674" y="0.0" width="97.333333333333314" height="43"/>
+                                                <rect key="frame" x="306.66666666666674" y="0.0" width="97.333333333333314" height="43.333333333333343"/>
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -901,7 +915,7 @@ kiện</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2Bb-L7-a7W">
-                                        <rect key="frame" x="0.0" y="144" width="404" height="43"/>
+                                        <rect key="frame" x="0.0" y="144.33333333333334" width="404" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83f-b5-pM0" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="43"/>
@@ -992,7 +1006,7 @@ kiện</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GSF-Af-idG">
-                                        <rect key="frame" x="0.0" y="192" width="404" height="43"/>
+                                        <rect key="frame" x="0.0" y="192.33333333333334" width="404" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwY-8Q-JFR" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="43"/>
@@ -1178,7 +1192,7 @@ kiện</string>
             <objects>
                 <tableViewController id="ld8-49-PW9" customClass="SideMenuRecords" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KRe-7U-fDt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="245"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333331"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -1192,14 +1206,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Expense" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B60-ok-ggH">
-                                                    <rect key="frame" x="20" y="12.999999999999998" width="65" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15" y="12.999999999999998" width="65" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Khi chi tiêu, cho vay nợ, trả nợ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cq3-o1-xpH">
-                                                    <rect key="frame" x="20" y="33.333333333333329" width="173.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33.333333333333329" width="173.66666666666666" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1216,14 +1230,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VcG-Ka-yLK">
-                                                    <rect key="frame" x="20.000000000000004" y="12.999999999999998" width="56.333333333333336" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15.000000000000004" y="12.999999999999998" width="56.333333333333336" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Khi có khoản thu nhập, thu nợ, vay nợ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wTJ-6G-phh">
-                                                    <rect key="frame" x="20" y="33.333333333333329" width="215.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33.333333333333329" width="215.66666666666666" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1240,14 +1254,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Transfer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VCG-Y8-xjG">
-                                                    <rect key="frame" x="19.999999999999996" y="12.999999999999998" width="63.666666666666664" height="20.333333333333332"/>
+                                                    <rect key="frame" x="14.999999999999996" y="12.999999999999998" width="63.666666666666664" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Chuyển tiền giữa các tài khoản trong Sổ của bạn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YZ5-MT-yzJ">
-                                                    <rect key="frame" x="20" y="33.333333333333329" width="277.33333333333331" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33.333333333333329" width="277.33333333333331" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1264,14 +1278,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Adjustment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PIJ-Oi-C5x">
-                                                    <rect key="frame" x="20" y="12.999999999999998" width="87.333333333333329" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15" y="12.999999999999998" width="87.333333333333329" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Tính và ghi số tiền đã chi/thu theo số tiền đang còn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAf-wA-CfR">
-                                                    <rect key="frame" x="20" y="33.333333333333329" width="293" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33.333333333333329" width="293" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

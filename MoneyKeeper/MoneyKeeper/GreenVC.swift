@@ -13,13 +13,14 @@ class GreenVC: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: "GreenVC") as! GreenVC
     }
+    let nameCurrent = "Adjustment"
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.post(name: NotificationKey.hide, object: nil)
+        NotificationCenter.default.post(name: NotificationKey.hide, object: nameCurrent)
     }
 
     override func didReceiveMemoryWarning() {

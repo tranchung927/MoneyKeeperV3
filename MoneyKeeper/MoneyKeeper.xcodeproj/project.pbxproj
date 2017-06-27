@@ -116,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				F20FDA501EE94BE900180D36 /* PageVC.swift */,
-				F20FDA521EE94C1300180D36 /* BaseModelController.swift */,
 				F28A350A1EDD7ECA0043D70D /* MenuTab */,
 			);
 			name = PageViewController;
@@ -134,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				F28A35041EDD79A10043D70D /* CalculatorVC.swift */,
-				F26DA25B1EF374A400351314 /* CalculatorBrain.swift */,
 			);
 			name = KeyBoard;
 			sourceTree = "<group>";
@@ -149,6 +147,7 @@
 				F2C3AB281EDD595700D1F39B /* Info.plist */,
 			);
 			name = Support;
+			path = MoneyKeeper;
 			sourceTree = "<group>";
 		};
 		F28A35091EDD7EAA0043D70D /* ContainerRecords */ = {
@@ -189,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				F2C3AB1B1EDD595700D1F39B /* MoneyKeeper */,
+				F28A35081EDD7E870043D70D /* Support */,
 				F2C3AB301EDD595800D1F39B /* MoneyKeeperTests */,
 				F2C3AB3B1EDD595800D1F39B /* MoneyKeeperUITests */,
 				F2C3AB1A1EDD595700D1F39B /* Products */,
@@ -209,9 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				F2C3AB1C1EDD595700D1F39B /* AppDelegate.swift */,
-				F28A35061EDD7E560043D70D /* Controller */,
-				F28A35081EDD7E870043D70D /* Support */,
+				F2EC7C2E1F00ED6C0068C0CB /* Model */,
 				F28A350B1EDD7F100043D70D /* StoryBoard */,
+				F28A35061EDD7E560043D70D /* Controller */,
 			);
 			path = MoneyKeeper;
 			sourceTree = "<group>";
@@ -232,6 +232,15 @@
 				F2C3AB3E1EDD595800D1F39B /* Info.plist */,
 			);
 			path = MoneyKeeperUITests;
+			sourceTree = "<group>";
+		};
+		F2EC7C2E1F00ED6C0068C0CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F26DA25B1EF374A400351314 /* CalculatorBrain.swift */,
+				F20FDA521EE94C1300180D36 /* BaseModelController.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

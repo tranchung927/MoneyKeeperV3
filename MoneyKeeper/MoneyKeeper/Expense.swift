@@ -13,6 +13,7 @@ class Expense: UITableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: "Expense") as! Expense
     }
+    let nameCurrent = "Expense"
     @IBOutlet weak var borrowToPay: UIButton!
     @IBOutlet weak var unitRightView: UIView!
     @IBOutlet weak var textFieldCalculator: UITextField!
@@ -25,9 +26,9 @@ class Expense: UITableViewController {
         registerNotificationHideKeyBoard()
         registerTextField()
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.post(name: NotificationKey.hide, object: nameCurrent)
     }
     func registerTextField(){
         NotificationCenter.default.addObserver(self, selector: #selector(getTextFieldData), name: NotificationKey.calculator, object: nil)
@@ -58,6 +59,7 @@ class Expense: UITableViewController {
     }
     
     enum CellIndex : Int {
+        case distance0
         case texFieldCalculator
         case distance1
         case category
@@ -78,7 +80,7 @@ class Expense: UITableViewController {
             return 60
         case CellIndex.lender.rawValue:
             return borrowToPay.isSelected ? 0 : 55
-        case CellIndex.distance1.rawValue, CellIndex.distance2.rawValue:
+        case CellIndex.distance0.rawValue, CellIndex.distance1.rawValue, CellIndex.distance2.rawValue:
             return 8
         default:
             return 55

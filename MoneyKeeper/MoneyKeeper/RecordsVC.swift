@@ -14,20 +14,11 @@ struct SegueIdentifier {
 }
 
 class RecordsVC: UIViewController {
-    
     var sideMenuVC: SideMenuRecords?
     var pageVC: PageVC?
     var isSideMenuOpen: Bool = true {
         didSet {
-            if isSideMenuOpen {
-                configForSideMenuOpeningState()
-
-            } else {
-                configForSideMenuClosingState()
-            }
-            UIView.animate(withDuration: 0.35, animations: { 
-                self.view.layoutIfNeeded()
-            })
+            setStageSideMenu(isSideMenuOpen: isSideMenuOpen)
         }
     }
 
@@ -43,21 +34,12 @@ class RecordsVC: UIViewController {
         self.bottomKeyBoard.constant = -self.keyBoardContainer.bounds.height
         isSideMenuOpen = false
         registerNotificationAppearKeyBoard()
-        registerNotificationSideMenu()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-        // Dispose of any resources that can be recreated.
+        registerNotificationPageVC()
     }
     
     func registerNotificationAppearKeyBoard() {
         NotificationCenter.default.addObserver(self, selector: #selector(appearKeyBoard), name: NotificationKey.appear, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(hideKeyBoard), name: NotificationKey.hide, object: nil)
-    }
-    func registerNotificationSideMenu() {
-        NotificationCenter.default.addObserver(self, selector: #selector(configForSideMenuClosingState), name: NotificationKey.hideSideMenu, object: nil)
     }
     
     deinit {

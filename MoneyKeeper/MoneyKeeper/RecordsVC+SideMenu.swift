@@ -11,36 +11,34 @@ extension RecordsVC: SideMenuRecordsDelegate {
     
     func passData(indexOf: Int) {
         isSideMenuOpen = false
-        switch indexOf {
-        case 1:
-            pageVC?.jump(toIndex: 0)
-        case 2:
-            pageVC?.jump(toIndex: 1)
-        case 3:
-            pageVC?.jump(toIndex: 2)
-        case 4:
-            pageVC?.jump(toIndex: 3)
-        default:
-            return
-        }
+        pageVC?.jump(toIndex: indexOf)
     }
     func passedNameTitleMenu(name: String) {
         onClickMenu.setTitle(name, for: UIControlState.normal)
     }
-    
 }
 extension RecordsVC {
-    func configForSideMenuOpeningState() {
-        self.sideMenuViewContainer.clipsToBounds = false
-        self.topSideMenu.constant = 0
-        self.corverButton.alpha = 0.5
-        self.corverButton.isHidden = false
+    func registerNotificationPageVC(){
+        NotificationCenter.default.addObserver(self, selector:#selector(setName), name: NotificationKey.hide, object: nil)
     }
-    func configForSideMenuClosingState() {
-        self.sideMenuViewContainer.clipsToBounds = true
-        self.topSideMenu.constant = -self.sideMenuViewContainer.bounds.height
-        self.corverButton.alpha = 0
-        self.corverButton.isHidden = true
+    func setName(notification: Notification) {
+        let name = notification.object as? String
+        onClickMenu.setTitle(name, for: UIControlState.normal)
+    }
+    func setStageSideMenu(isSideMenuOpen: Bool) {
+        if isSideMenuOpen {
+            self.sideMenuViewContainer.isHidden = false
+        }
+        self.corverButton.isHidden = isSideMenuOpen ? false : true
+        UIView.animate(withDuration: 0.35, animations: {
+            self.topSideMenu.constant = isSideMenuOpen ? 0 : -self.sideMenuViewContainer.bounds.height
+            self.corverButton.alpha = isSideMenuOpen ? 0.35 : 0
+            self.view.layoutIfNeeded()},
+            completion: { (isSuccess) in
+                if !isSideMenuOpen {
+                    self.sideMenuViewContainer.isHidden = true
+            }
+        })
     }
     
     @IBAction func onClickCorverButton(_ sender: Any) {

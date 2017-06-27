@@ -28,7 +28,7 @@ class Expense: UITableViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NotificationCenter.default.post(name: NotificationKey.hide, object: nameCurrent)
+        NotificationCenter.default.post(name: NotificationKey.sideMenu, object: nameCurrent)
     }
     func registerTextField(){
         NotificationCenter.default.addObserver(self, selector: #selector(getTextFieldData), name: NotificationKey.calculator, object: nil)

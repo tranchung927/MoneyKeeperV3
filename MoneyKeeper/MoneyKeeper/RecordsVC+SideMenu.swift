@@ -19,7 +19,7 @@ extension RecordsVC: SideMenuRecordsDelegate {
 }
 extension RecordsVC {
     func registerNotificationPageVC(){
-        NotificationCenter.default.addObserver(self, selector:#selector(setName), name: NotificationKey.hide, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(setName), name: NotificationKey.sideMenu, object: nil)
     }
     func setName(notification: Notification) {
         let name = notification.object as? String

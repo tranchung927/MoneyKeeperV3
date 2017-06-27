@@ -20,7 +20,8 @@ class RedVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.post(name: NotificationKey.hide, object: nameCurrent)
+        NotificationCenter.default.post(name: NotificationKey.hide, object: nil)
+        NotificationCenter.default.post(name: NotificationKey.sideMenu, object: nameCurrent)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

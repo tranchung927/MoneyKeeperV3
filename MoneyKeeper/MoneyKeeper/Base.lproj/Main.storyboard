@@ -110,7 +110,7 @@
         <!--Records-->
         <scene sceneID="cJd-M0-1bQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NpF-JM-anh" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NpF-JM-anh" customClass="RecordsNavi" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Records" image="GhiChep_light" selectedImage="GhiChep_hightlight" id="tvp-Wx-ze8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cfP-S4-QtV">

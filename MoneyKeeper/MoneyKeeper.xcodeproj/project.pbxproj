@@ -19,6 +19,7 @@
 		F283E7A81EEB9C4800E65410 /* RecordsVC + KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F283E7A71EEB9C4800E65410 /* RecordsVC + KeyBoard.swift */; };
 		F287D86A1EE7819800E45E43 /* SideMenuRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = F287D8691EE7819800E45E43 /* SideMenuRecords.swift */; };
 		F28A35051EDD79A10043D70D /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A35041EDD79A10043D70D /* CalculatorVC.swift */; };
+		F2AA656C1F034DC900E2E64D /* RecordsNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA656B1F034DC900E2E64D /* RecordsNavi.swift */; };
 		F2B4FA9A1EDD6F710032F205 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */; };
 		F2B4FA9C1EDD753B0032F205 /* RecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA9B1EDD753B0032F205 /* RecordsVC.swift */; };
 		F2B4FA9E1EDD75F50032F205 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA9D1EDD75F50032F205 /* Expense.swift */; };
@@ -61,6 +62,7 @@
 		F283E7A71EEB9C4800E65410 /* RecordsVC + KeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordsVC + KeyBoard.swift"; sourceTree = "<group>"; };
 		F287D8691EE7819800E45E43 /* SideMenuRecords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuRecords.swift; sourceTree = "<group>"; };
 		F28A35041EDD79A10043D70D /* CalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
+		F2AA656B1F034DC900E2E64D /* RecordsNavi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsNavi.swift; sourceTree = "<group>"; };
 		F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonCustom.swift; path = ../ButtonCustom.swift; sourceTree = "<group>"; };
 		F2B4FA9B1EDD753B0032F205 /* RecordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsVC.swift; sourceTree = "<group>"; };
 		F2B4FA9D1EDD75F50032F205 /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				F2B4FA9B1EDD753B0032F205 /* RecordsVC.swift */,
 				F283E7A51EEB9C2B00E65410 /* RecordsVC+SideMenu.swift */,
 				F283E7A71EEB9C4800E65410 /* RecordsVC + KeyBoard.swift */,
+				F2AA656B1F034DC900E2E64D /* RecordsNavi.swift */,
 				F28A35071EDD7E720043D70D /* KeyBoard */,
 				F23EBD8D1EEA966B005C0318 /* SideMenu */,
 				F27CF35C1EEA12370037F241 /* PageViewController */,
@@ -392,6 +395,7 @@
 				F20FDA511EE94BE900180D36 /* PageVC.swift in Sources */,
 				F283E7A81EEB9C4800E65410 /* RecordsVC + KeyBoard.swift in Sources */,
 				F20FDA571EE94C9500180D36 /* RedVC.swift in Sources */,
+				F2AA656C1F034DC900E2E64D /* RecordsNavi.swift in Sources */,
 				F283E7A61EEB9C2B00E65410 /* RecordsVC+SideMenu.swift in Sources */,
 				F211EA071EE6B1B100E1859C /* ShadowView.swift in Sources */,
 			);

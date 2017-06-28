@@ -9,7 +9,8 @@
 import UIKit
 
 class Header: UITableViewCell {
-
+    @IBOutlet weak var imageHeader: UIImageView!
+    @IBOutlet weak var nameHeader: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

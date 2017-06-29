@@ -646,42 +646,66 @@ kiện</string>
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-pf-Jmr">
-                                            <rect key="frame" x="0.0" y="2" width="40" height="40"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sort_down" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-pf-Jmr" customClass="ImageView" customModule="MoneyKeeper" customModuleProvider="target">
+                                            <rect key="frame" x="10" y="14.666666666666668" width="15" height="15.000000000000004"/>
+                                            <color key="backgroundColor" red="0.21568402649999999" green="0.64055669309999996" blue="0.62586206200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="qMJ-pf-Jmr" secondAttribute="height" id="QnT-h7-5zN"/>
-                                                <constraint firstAttribute="width" constant="40" id="SGV-oj-7ps"/>
+                                                <constraint firstAttribute="width" constant="15" id="SGV-oj-7ps"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.21568402649999999" green="0.64055669309999996" blue="0.62586206200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="-1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bOo-IP-flF">
-                                            <rect key="frame" x="40" y="6.6666666666666661" width="30" height="30.333333333333336"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bOo-IP-flF" customClass="ImageView" customModule="MoneyKeeper" customModuleProvider="target">
+                                            <rect key="frame" x="35" y="7" width="30" height="30.333333333333336"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="PsH-fi-7oz"/>
                                                 <constraint firstAttribute="width" secondItem="bOo-IP-flF" secondAttribute="height" id="aDY-LT-t5i"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="-1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9o-P9-yGl">
-                                            <rect key="frame" x="90" y="0.0" width="324" height="43.666666666666664"/>
+                                            <rect key="frame" x="85" y="0.0" width="329" height="43.666666666666664"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="qMJ-pf-Jmr" firstAttribute="leading" secondItem="SBq-W9-4Vh" secondAttribute="leading" id="C36-4d-6x0"/>
+                                        <constraint firstItem="qMJ-pf-Jmr" firstAttribute="leading" secondItem="SBq-W9-4Vh" secondAttribute="leading" constant="10" id="C36-4d-6x0"/>
                                         <constraint firstAttribute="bottom" secondItem="J9o-P9-yGl" secondAttribute="bottom" id="VuV-Fs-0kA"/>
                                         <constraint firstItem="bOo-IP-flF" firstAttribute="centerY" secondItem="SBq-W9-4Vh" secondAttribute="centerY" id="Zps-WL-0C3"/>
                                         <constraint firstAttribute="trailing" secondItem="J9o-P9-yGl" secondAttribute="trailing" id="hgM-ea-rsb"/>
-                                        <constraint firstItem="bOo-IP-flF" firstAttribute="leading" secondItem="qMJ-pf-Jmr" secondAttribute="trailing" id="w8v-Vq-P8i"/>
+                                        <constraint firstItem="bOo-IP-flF" firstAttribute="leading" secondItem="qMJ-pf-Jmr" secondAttribute="trailing" constant="10" id="w8v-Vq-P8i"/>
                                         <constraint firstItem="J9o-P9-yGl" firstAttribute="top" secondItem="SBq-W9-4Vh" secondAttribute="top" id="wUG-JP-4cv"/>
                                         <constraint firstItem="J9o-P9-yGl" firstAttribute="leading" secondItem="bOo-IP-flF" secondAttribute="trailing" constant="20" id="yUd-zw-Bis"/>
                                         <constraint firstItem="qMJ-pf-Jmr" firstAttribute="centerY" secondItem="SBq-W9-4Vh" secondAttribute="centerY" id="yyM-6H-clR"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <outlet property="imageHeader" destination="bOo-IP-flF" id="N1Y-iD-lof"/>
                                     <outlet property="nameHeader" destination="J9o-P9-yGl" id="krM-OF-I7R"/>
+                                    <outlet property="rotationSectionIcon" destination="qMJ-pf-Jmr" id="5HS-vN-bIb"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="I6H-i5-yC7" customClass="CellTableView" customModule="MoneyKeeper" customModuleProvider="target">
@@ -697,12 +721,23 @@ kiện</string>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UMZ-g7-Rzo">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UMZ-g7-Rzo" customClass="ImageView" customModule="MoneyKeeper" customModuleProvider="target">
                                             <rect key="frame" x="50" y="6" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="DRJ-Vw-qvy"/>
                                                 <constraint firstAttribute="width" secondItem="UMZ-g7-Rzo" secondAttribute="height" id="Nbk-kc-l8h"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.21568402649999999" green="0.64055669309999996" blue="0.62586206200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="-1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -1338,14 +1373,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Expense" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B60-ok-ggH">
-                                                    <rect key="frame" x="15" y="12.999999999999998" width="65" height="20.333333333333332"/>
+                                                    <rect key="frame" x="20" y="12.999999999999998" width="65" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Khi chi tiêu, cho vay nợ, trả nợ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cq3-o1-xpH">
-                                                    <rect key="frame" x="15" y="33.333333333333329" width="173.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="20" y="33.333333333333329" width="173.66666666666666" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1362,14 +1397,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VcG-Ka-yLK">
-                                                    <rect key="frame" x="15.000000000000004" y="12.999999999999998" width="56.333333333333336" height="20.333333333333332"/>
+                                                    <rect key="frame" x="20.000000000000004" y="12.999999999999998" width="56.333333333333336" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Khi có khoản thu nhập, thu nợ, vay nợ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wTJ-6G-phh">
-                                                    <rect key="frame" x="15" y="33.333333333333329" width="215.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="20" y="33.333333333333329" width="215.66666666666666" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1386,14 +1421,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Transfer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VCG-Y8-xjG">
-                                                    <rect key="frame" x="14.999999999999996" y="12.999999999999998" width="63.666666666666664" height="20.333333333333332"/>
+                                                    <rect key="frame" x="19.999999999999996" y="12.999999999999998" width="63.666666666666664" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Chuyển tiền giữa các tài khoản trong Sổ của bạn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YZ5-MT-yzJ">
-                                                    <rect key="frame" x="15" y="33.333333333333329" width="277.33333333333331" height="14.333333333333334"/>
+                                                    <rect key="frame" x="20" y="33.333333333333329" width="277.33333333333331" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1410,14 +1445,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Adjustment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PIJ-Oi-C5x">
-                                                    <rect key="frame" x="15" y="12.999999999999998" width="87.333333333333329" height="20.333333333333332"/>
+                                                    <rect key="frame" x="20" y="12.999999999999998" width="87.333333333333329" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Tính và ghi số tiền đã chi/thu theo số tiền đang còn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAf-wA-CfR">
-                                                    <rect key="frame" x="15" y="33.333333333333329" width="293" height="14.333333333333334"/>
+                                                    <rect key="frame" x="20" y="33.333333333333329" width="293" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

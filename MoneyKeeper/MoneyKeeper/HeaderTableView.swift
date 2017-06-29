@@ -9,6 +9,7 @@
 import UIKit
 
 class HeaderTableView: UITableViewCell {
+    @IBOutlet weak var rotationSectionIcon: UIImageView!
     @IBOutlet weak var imageHeader: UIImageView!
     @IBOutlet weak var nameHeader: UILabel!
     
@@ -21,7 +22,6 @@ class HeaderTableView: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 }

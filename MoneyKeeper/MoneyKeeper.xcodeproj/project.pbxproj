@@ -13,6 +13,7 @@
 		F20FDA571EE94C9500180D36 /* RedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20FDA561EE94C9500180D36 /* RedVC.swift */; };
 		F20FDA591EE94CAF00180D36 /* GreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20FDA581EE94CAF00180D36 /* GreenVC.swift */; };
 		F211EA071EE6B1B100E1859C /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211EA061EE6B1B100E1859C /* ShadowView.swift */; };
+		F2126FBC1F05105F007D9624 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2126FBB1F05105F007D9624 /* ImageView.swift */; };
 		F26DA25C1EF374A400351314 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26DA25B1EF374A400351314 /* CalculatorBrain.swift */; };
 		F27CF35B1EEA10B90037F241 /* Records.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27CF3591EEA10B90037F241 /* Records.storyboard */; };
 		F283E7A61EEB9C2B00E65410 /* RecordsVC+SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F283E7A51EEB9C2B00E65410 /* RecordsVC+SideMenu.swift */; };
@@ -62,6 +63,7 @@
 		F20FDA561EE94C9500180D36 /* RedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedVC.swift; sourceTree = "<group>"; };
 		F20FDA581EE94CAF00180D36 /* GreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenVC.swift; sourceTree = "<group>"; };
 		F211EA061EE6B1B100E1859C /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		F2126FBB1F05105F007D9624 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		F26DA25B1EF374A400351314 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		F27CF35A1EEA10B90037F241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Records.storyboard; sourceTree = "<group>"; };
 		F283E7A51EEB9C2B00E65410 /* RecordsVC+SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecordsVC+SideMenu.swift"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				F2C3AB231EDD595700D1F39B /* Assets.xcassets */,
 				F2AA657A1F0363D100E2E64D /* Section.json */,
 				F2C3AB281EDD595700D1F39B /* Info.plist */,
+				F2126FBB1F05105F007D9624 /* ImageView.swift */,
 			);
 			name = Support;
 			path = MoneyKeeper;
@@ -428,6 +431,7 @@
 				F26DA25C1EF374A400351314 /* CalculatorBrain.swift in Sources */,
 				F287D86A1EE7819800E45E43 /* SideMenuRecords.swift in Sources */,
 				F2C3AB1D1EDD595700D1F39B /* AppDelegate.swift in Sources */,
+				F2126FBC1F05105F007D9624 /* ImageView.swift in Sources */,
 				F28A35051EDD79A10043D70D /* CalculatorVC.swift in Sources */,
 				F20FDA551EE94C8100180D36 /* BluVC.swift in Sources */,
 				F20FDA511EE94BE900180D36 /* PageVC.swift in Sources */,

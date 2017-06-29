@@ -97,6 +97,10 @@ class ExpenseCategoriesTVC: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Header") as! HeaderTableView
             cell.imageHeader.image = tableViewSection[indexPath.section].image
             cell.nameHeader.text = tableViewSection[indexPath.section].title
+            UIView.animate(withDuration: 0.25, animations: {
+                cell.rotationSectionIcon.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
+            })
+
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CellTableView

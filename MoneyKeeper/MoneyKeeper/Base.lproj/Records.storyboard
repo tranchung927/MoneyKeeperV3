@@ -689,11 +689,21 @@ kiện</string>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtK-24-apH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <connections>
+                                                <action selector="didSelectHeader:" destination="DCm-aF-KD4" eventType="touchUpInside" id="g0h-pu-o8a"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="TtK-24-apH" secondAttribute="bottom" id="0vV-hb-kEK"/>
                                         <constraint firstItem="qMJ-pf-Jmr" firstAttribute="leading" secondItem="SBq-W9-4Vh" secondAttribute="leading" constant="10" id="C36-4d-6x0"/>
+                                        <constraint firstItem="TtK-24-apH" firstAttribute="leading" secondItem="SBq-W9-4Vh" secondAttribute="leading" id="Nh5-4X-yNM"/>
+                                        <constraint firstItem="TtK-24-apH" firstAttribute="top" secondItem="SBq-W9-4Vh" secondAttribute="top" id="Pfp-eB-Mep"/>
                                         <constraint firstAttribute="bottom" secondItem="J9o-P9-yGl" secondAttribute="bottom" id="VuV-Fs-0kA"/>
                                         <constraint firstItem="bOo-IP-flF" firstAttribute="centerY" secondItem="SBq-W9-4Vh" secondAttribute="centerY" id="Zps-WL-0C3"/>
+                                        <constraint firstAttribute="trailing" secondItem="TtK-24-apH" secondAttribute="trailing" id="aub-X3-XrV"/>
                                         <constraint firstAttribute="trailing" secondItem="J9o-P9-yGl" secondAttribute="trailing" id="hgM-ea-rsb"/>
                                         <constraint firstItem="bOo-IP-flF" firstAttribute="leading" secondItem="qMJ-pf-Jmr" secondAttribute="trailing" constant="10" id="w8v-Vq-P8i"/>
                                         <constraint firstItem="J9o-P9-yGl" firstAttribute="top" secondItem="SBq-W9-4Vh" secondAttribute="top" id="wUG-JP-4cv"/>
@@ -1373,14 +1383,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Expense" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B60-ok-ggH">
-                                                    <rect key="frame" x="20" y="12.999999999999998" width="65" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15" y="12.999999999999998" width="65" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Khi chi tiêu, cho vay nợ, trả nợ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cq3-o1-xpH">
-                                                    <rect key="frame" x="20" y="33.333333333333329" width="173.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33.333333333333329" width="173.66666666666666" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1397,14 +1407,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VcG-Ka-yLK">
-                                                    <rect key="frame" x="20.000000000000004" y="12.999999999999998" width="56.333333333333336" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15.000000000000004" y="12.999999999999998" width="56.333333333333336" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Khi có khoản thu nhập, thu nợ, vay nợ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wTJ-6G-phh">
-                                                    <rect key="frame" x="20" y="33.333333333333329" width="215.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33.333333333333329" width="215.66666666666666" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1421,14 +1431,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Transfer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VCG-Y8-xjG">
-                                                    <rect key="frame" x="19.999999999999996" y="12.999999999999998" width="63.666666666666664" height="20.333333333333332"/>
+                                                    <rect key="frame" x="14.999999999999996" y="12.999999999999998" width="63.666666666666664" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Chuyển tiền giữa các tài khoản trong Sổ của bạn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YZ5-MT-yzJ">
-                                                    <rect key="frame" x="20" y="33.333333333333329" width="277.33333333333331" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33.333333333333329" width="277.33333333333331" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1445,14 +1455,14 @@ kiện</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Adjustment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PIJ-Oi-C5x">
-                                                    <rect key="frame" x="20" y="12.999999999999998" width="87.333333333333329" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15" y="12.999999999999998" width="87.333333333333329" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Tính và ghi số tiền đã chi/thu theo số tiền đang còn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAf-wA-CfR">
-                                                    <rect key="frame" x="20" y="33.333333333333329" width="293" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33.333333333333329" width="293" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

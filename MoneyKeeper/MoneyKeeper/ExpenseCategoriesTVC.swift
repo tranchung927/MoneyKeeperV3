@@ -9,8 +9,8 @@
 import UIKit
 
 typealias CellData = (image: UIImage, title: String)
-class ExpenseCategoriesTVC: UITableViewController {
-    
+class ExpenseCategoriesTVC: UITableViewController, HeaderTableViewDelegate {
+    var isHeaderSection: Bool = true
     var displayedViewContents : [[CellData]] = []
     let tableViewContents : [[CellData]] = [
     [(#imageLiteral(resourceName: "Groceries"), "Groceries"),
@@ -88,53 +88,45 @@ class ExpenseCategoriesTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return displayedViewContents[section].count+1
+        return displayedViewContents[section].count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let isHeaderSesion = indexPath.row == 0
-        if isHeaderSesion {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Header") as! HeaderTableView
-            cell.imageHeader.image = tableViewSection[indexPath.section].image
-            cell.nameHeader.text = tableViewSection[indexPath.section].title
-            UIView.animate(withDuration: 0.25, animations: {
-                cell.rotationSectionIcon.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
-            })
-
-            return cell
-        } else {
+//        let isHeaderSesion = indexPath.row == 0
+//        if isHeaderSesion {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "Header") as! HeaderTableView
+//            cell.imageHeader.image = tableViewSection[indexPath.section].image
+//            cell.nameHeader.text = tableViewSection[indexPath.section].title
+//            UIView.animate(withDuration: 0.25, animations: {
+//                cell.rotationSectionIcon.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
+//            })
+//
+//            return cell
+//        } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CellTableView
-            cell.imageCell.image = displayedViewContents[indexPath.section][indexPath.row-1].image
-            cell.nameCell?.text = displayedViewContents[indexPath.section][indexPath.row-1].title
+            cell.imageCell.image = displayedViewContents[indexPath.section][indexPath.row].image
+            cell.nameCell?.text = displayedViewContents[indexPath.section][indexPath.row].title
             return cell
-        }
+//        }
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let isHeaderSection = indexPath.row == 0
-        if isHeaderSection {
-            let cellInSection = displayedViewContents[indexPath.section]
-            if cellInSection.count != 0 {
-                var willRemoveIndexPaths : [IndexPath] = []
-                for row in 1 ... displayedViewContents[indexPath.section].count {
-                    let willRemoveIndexPath = IndexPath(row: row, section: indexPath.section)
-                    willRemoveIndexPaths.append(willRemoveIndexPath)
-                }
-                displayedViewContents[indexPath.section].removeAll()
-                self.tableView.beginUpdates()
-                tableView.deleteRows(at: willRemoveIndexPaths, with: .fade)
-                self.tableView.endUpdates()
-                
-            } else {
-                displayedViewContents[indexPath.section] = tableViewContents[indexPath.section]
-                var willAddIndexPaths : [IndexPath] = []
-                for row in 1 ... displayedViewContents[indexPath.section].count {
-                    let willRemoveIndexPath = IndexPath(row: row, section: indexPath.section)
-                    willAddIndexPaths.append(willRemoveIndexPath)
-                }
-                self.tableView.beginUpdates()
-                tableView.insertRows(at: willAddIndexPaths, with: .fade)
-                self.tableView.endUpdates()
-            }
-        }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableCell(withIdentifier: "Header") as! HeaderTableView
+        headerView.imageHeader.image = tableViewSection[section].image
+        headerView.nameHeader.text = tableViewSection[section].title
+        headerView.delegate = self
+        headerView.section = section
+        headerView.tableView = tableView
+        return headerView
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
+    }
+    func tableView(_ tableView: UITableView, didSelectAtHeader section: Int) {
+        isHeaderSection = !isHeaderSection
     }
 }

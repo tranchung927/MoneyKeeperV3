@@ -9,76 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MoneyKeeper/DataService.swift"
-            timestampString = "520351082.964706"
+            filePath = "MoneyKeeper/ExpenseCategoriesTVC.swift"
+            timestampString = "520422961.823635"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "DataServices"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "globalinit_33_FF4EEC819C46FC9EB597954AF3D5AF39_func0"
-                  moduleName = "MoneyKeeper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tranchung/Desktop/Chung/MoneyKeeperV3/MoneyKeeper/MoneyKeeper/DataService.swift"
-                  timestampString = "520352018.475092"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MoneyKeeper.DataServices.shared.unsafeMutableAddressor : MoneyKeeper.DataServices"
-                  moduleName = "MoneyKeeper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tranchung/Desktop/Chung/MoneyKeeperV3/MoneyKeeper/MoneyKeeper/DataService.swift"
-                  timestampString = "520352018.4783"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static MoneyKeeper.DataServices.shared.getter : MoneyKeeper.DataServices"
-                  moduleName = "MoneyKeeper"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tranchung/Desktop/Chung/MoneyKeeperV3/MoneyKeeper/MoneyKeeper/DataService.swift"
-                  timestampString = "520352018.481596"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MoneyKeeper/DataService.swift"
-            timestampString = "520351858.388628"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "makeDataTaskRequest(request:completedBlock:)"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

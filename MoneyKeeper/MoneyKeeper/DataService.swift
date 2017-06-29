@@ -21,8 +21,6 @@ class DataServices {
         }
     }
     private func makeDataTaskRequest(request: URLRequest, completedBlock: @escaping (JSON) -> Void ) {
-//        let data2 = NSData(contentsOf: url!)
-
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard error == nil else {
                 print(error!.localizedDescription)

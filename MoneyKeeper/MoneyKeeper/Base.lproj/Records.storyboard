@@ -634,16 +634,16 @@ kiện</string>
         <scene sceneID="pZ3-vO-yoz">
             <objects>
                 <tableViewController id="GFA-WG-JYl" customClass="ExpenseCategoriesTVC" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uNN-91-UFm">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uNN-91-UFm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Header" id="DCm-aF-KD4" customClass="Header" customModule="MoneyKeeper" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Header" id="DCm-aF-KD4" customClass="HeaderTableView" customModule="MoneyKeeper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DCm-aF-KD4" id="SBq-W9-4Vh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-pf-Jmr">
@@ -678,17 +678,17 @@ kiện</string>
                                         <constraint firstItem="qMJ-pf-Jmr" firstAttribute="centerY" secondItem="SBq-W9-4Vh" secondAttribute="centerY" id="yyM-6H-clR"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
-                                    <outlet property="imageHeader" destination="bOo-IP-flF" id="ibT-io-dX2"/>
-                                    <outlet property="nameHeader" destination="J9o-P9-yGl" id="VpS-dU-Pjb"/>
+                                    <outlet property="imageHeader" destination="bOo-IP-flF" id="N1Y-iD-lof"/>
+                                    <outlet property="nameHeader" destination="J9o-P9-yGl" id="krM-OF-I7R"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="I6H-i5-yC7" customClass="Cell" customModule="MoneyKeeper" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="I6H-i5-yC7" customClass="CellTableView" customModule="MoneyKeeper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I6H-i5-yC7" id="Ofb-ff-0P0">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0u-MH-NI3">
@@ -714,6 +714,7 @@ kiện</string>
                                         <constraint firstAttribute="trailing" secondItem="E0u-MH-NI3" secondAttribute="trailing" id="yDf-Ms-QsH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="imageCell" destination="UMZ-g7-Rzo" id="CIY-li-qIB"/>
                                     <outlet property="nameCell" destination="E0u-MH-NI3" id="DnJ-Uy-fAa"/>
@@ -754,7 +755,7 @@ kiện</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Itz-bG-wcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3150" y="-2096"/>
+            <point key="canvasLocation" x="3149.275362318841" y="-2097.554347826087"/>
         </scene>
         <!--CalculatorVC-->
         <scene sceneID="QQc-A6-KcO">

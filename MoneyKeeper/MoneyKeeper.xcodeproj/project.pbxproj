@@ -22,8 +22,8 @@
 		F2A0EBC21F038D4B00B25DF8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A0EBC11F038D4B00B25DF8 /* DataService.swift */; };
 		F2AA656C1F034DC900E2E64D /* RecordsNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA656B1F034DC900E2E64D /* RecordsNavi.swift */; };
 		F2AA65721F03524900E2E64D /* ExpenseCategoriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA65711F03524900E2E64D /* ExpenseCategoriesTVC.swift */; };
-		F2AA65741F03528600E2E64D /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA65731F03528600E2E64D /* Cell.swift */; };
-		F2AA65761F03529400E2E64D /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA65751F03529400E2E64D /* Header.swift */; };
+		F2AA65741F03528600E2E64D /* CellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA65731F03528600E2E64D /* CellTableView.swift */; };
+		F2AA65761F03529400E2E64D /* HeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA65751F03529400E2E64D /* HeaderTableView.swift */; };
 		F2AA65781F03599F00E2E64D /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AA65771F03599F00E2E64D /* Sections.swift */; };
 		F2AA657B1F0363D100E2E64D /* Section.json in Resources */ = {isa = PBXBuildFile; fileRef = F2AA657A1F0363D100E2E64D /* Section.json */; };
 		F2B4FA9A1EDD6F710032F205 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */; };
@@ -71,8 +71,8 @@
 		F2A0EBC11F038D4B00B25DF8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F2AA656B1F034DC900E2E64D /* RecordsNavi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsNavi.swift; sourceTree = "<group>"; };
 		F2AA65711F03524900E2E64D /* ExpenseCategoriesTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseCategoriesTVC.swift; sourceTree = "<group>"; };
-		F2AA65731F03528600E2E64D /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		F2AA65751F03529400E2E64D /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		F2AA65731F03528600E2E64D /* CellTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableView.swift; sourceTree = "<group>"; };
+		F2AA65751F03529400E2E64D /* HeaderTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableView.swift; sourceTree = "<group>"; };
 		F2AA65771F03599F00E2E64D /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		F2AA657A1F0363D100E2E64D /* Section.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Section.json; sourceTree = "<group>"; };
 		F2B4FA991EDD6F710032F205 /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonCustom.swift; path = ../ButtonCustom.swift; sourceTree = "<group>"; };
@@ -205,8 +205,8 @@
 			children = (
 				F2B4FA9D1EDD75F50032F205 /* Expense.swift */,
 				F2AA65711F03524900E2E64D /* ExpenseCategoriesTVC.swift */,
-				F2AA65731F03528600E2E64D /* Cell.swift */,
-				F2AA65751F03529400E2E64D /* Header.swift */,
+				F2AA65731F03528600E2E64D /* CellTableView.swift */,
+				F2AA65751F03529400E2E64D /* HeaderTableView.swift */,
 			);
 			name = Expense;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2AA65761F03529400E2E64D /* Header.swift in Sources */,
+				F2AA65761F03529400E2E64D /* HeaderTableView.swift in Sources */,
 				F2B4FA9E1EDD75F50032F205 /* Expense.swift in Sources */,
 				F2B4FA9A1EDD6F710032F205 /* ButtonCustom.swift in Sources */,
 				F2AA65781F03599F00E2E64D /* Sections.swift in Sources */,
@@ -437,7 +437,7 @@
 				F2AA656C1F034DC900E2E64D /* RecordsNavi.swift in Sources */,
 				F283E7A61EEB9C2B00E65410 /* RecordsVC+SideMenu.swift in Sources */,
 				F211EA071EE6B1B100E1859C /* ShadowView.swift in Sources */,
-				F2AA65741F03528600E2E64D /* Cell.swift in Sources */,
+				F2AA65741F03528600E2E64D /* CellTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

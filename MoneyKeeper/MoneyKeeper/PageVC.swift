@@ -12,7 +12,6 @@ class PageVC: UIPageViewController, UIPageViewControllerDelegate {
 
     var modelController = BaseModelController()
     var startViewControllerIndex = 0
-    var index = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +26,6 @@ class PageVC: UIPageViewController, UIPageViewControllerDelegate {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        jump(toIndex: index)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,7 +34,7 @@ class PageVC: UIPageViewController, UIPageViewControllerDelegate {
         guard toIndex != NSNotFound && toIndex >= 0 else {
             return
         }
-        let direction : UIPageViewControllerNavigationDirection = toIndex > index ? .forward : .reverse
+        let direction : UIPageViewControllerNavigationDirection = toIndex > 0 ? .forward : .reverse
         if let viewController = modelController.viewControllerAtIndex(toIndex) {
             self.setViewControllers([viewController], direction: direction , animated: true, completion: {done in })
         }

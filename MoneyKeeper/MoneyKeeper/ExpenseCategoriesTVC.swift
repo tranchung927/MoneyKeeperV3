@@ -79,6 +79,12 @@ class ExpenseCategoriesTVC: UITableViewController, ExpandableHeaderViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         displayedViewContents = tableViewContents
+        tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        tabBarController?.tabBar.isHidden = false
     }
     
     // MARK: - Table view data source
@@ -100,9 +106,9 @@ class ExpenseCategoriesTVC: UITableViewController, ExpandableHeaderViewDelegate 
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (tableViewSection[indexPath.section].expanded){
-            return 44
-        } else {
             return 0
+        } else {
+            return 44
         }
     }
     

@@ -19,14 +19,11 @@ class BaseModelController: NSObject, UIPageViewControllerDataSource {
         return menuControllers
     }()
     
-    var index = 0
-    
     func viewControllerAtIndex(_ index: Int) -> UIViewController? {
         // Return the data view controller for the given index.
-        if (self.viewcontrollers.count == 0) || (index >= self.viewcontrollers.count) || (index < 0) {
+        if (self.viewcontrollers.count == 0) || (index >= self.viewcontrollers.count) || (index < 0) || (index == NSNotFound){
             return nil
         }
-        self.index = index
         return viewcontrollers[index]
     }
     
@@ -36,23 +33,12 @@ class BaseModelController: NSObject, UIPageViewControllerDataSource {
     
     // MARK: - Page View Controller Data Source
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController)
-        if (index == 0) || (index == NSNotFound) {
-            return nil
-        }
-        index -= 1
-        return self.viewControllerAtIndex(index)
+        let index = self.indexOfViewController(viewController)
+        return self.viewControllerAtIndex(index-1)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController)
-        if index == NSNotFound {
-            return nil
-        }
-        index += 1
-        if index == self.viewcontrollers.count {
-            return nil
-        }
-        return self.viewControllerAtIndex(index)
+        let index = self.indexOfViewController(viewController)
+        return self.viewControllerAtIndex(index+1)
     }
 }

@@ -32,7 +32,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5Z-zw-OOx">
-                                <rect key="frame" x="0.0" y="440.66666666666674" width="414" height="245.33333333333326"/>
+                                <rect key="frame" x="0.0" y="441" width="414" height="245"/>
                                 <connections>
                                     <segue destination="Caa-Gh-WkA" kind="embed" identifier="CalculatorViewController" id="ucS-0M-4de"/>
                                 </connections>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMg-Y5-diQ" customClass="ShadowView" customModule="MoneyKeeper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="414" height="245.33333333333331"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="245"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -639,94 +639,15 @@ kiện</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Header" id="DCm-aF-KD4" customClass="HeaderTableView" customModule="MoneyKeeper" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="I6H-i5-yC7" customClass="CellTableView" customModule="MoneyKeeper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DCm-aF-KD4" id="SBq-W9-4Vh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sort_down" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-pf-Jmr" customClass="ImageView" customModule="MoneyKeeper" customModuleProvider="target">
-                                            <rect key="frame" x="10" y="14.666666666666668" width="15" height="15.000000000000004"/>
-                                            <color key="backgroundColor" red="0.21568402649999999" green="0.64055669309999996" blue="0.62586206200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="qMJ-pf-Jmr" secondAttribute="height" id="QnT-h7-5zN"/>
-                                                <constraint firstAttribute="width" constant="15" id="SGV-oj-7ps"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                    <real key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                    <color key="value" red="0.21568402649999999" green="0.64055669309999996" blue="0.62586206200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="-1"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bOo-IP-flF" customClass="ImageView" customModule="MoneyKeeper" customModuleProvider="target">
-                                            <rect key="frame" x="35" y="7" width="30" height="30.333333333333336"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="30" id="PsH-fi-7oz"/>
-                                                <constraint firstAttribute="width" secondItem="bOo-IP-flF" secondAttribute="height" id="aDY-LT-t5i"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                    <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                    <real key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="-1"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9o-P9-yGl">
-                                            <rect key="frame" x="85" y="0.0" width="329" height="43.666666666666664"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtK-24-apH">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                            <connections>
-                                                <action selector="didSelectHeader:" destination="DCm-aF-KD4" eventType="touchUpInside" id="g0h-pu-o8a"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="TtK-24-apH" secondAttribute="bottom" id="0vV-hb-kEK"/>
-                                        <constraint firstItem="qMJ-pf-Jmr" firstAttribute="leading" secondItem="SBq-W9-4Vh" secondAttribute="leading" constant="10" id="C36-4d-6x0"/>
-                                        <constraint firstItem="TtK-24-apH" firstAttribute="leading" secondItem="SBq-W9-4Vh" secondAttribute="leading" id="Nh5-4X-yNM"/>
-                                        <constraint firstItem="TtK-24-apH" firstAttribute="top" secondItem="SBq-W9-4Vh" secondAttribute="top" id="Pfp-eB-Mep"/>
-                                        <constraint firstAttribute="bottom" secondItem="J9o-P9-yGl" secondAttribute="bottom" id="VuV-Fs-0kA"/>
-                                        <constraint firstItem="bOo-IP-flF" firstAttribute="centerY" secondItem="SBq-W9-4Vh" secondAttribute="centerY" id="Zps-WL-0C3"/>
-                                        <constraint firstAttribute="trailing" secondItem="TtK-24-apH" secondAttribute="trailing" id="aub-X3-XrV"/>
-                                        <constraint firstAttribute="trailing" secondItem="J9o-P9-yGl" secondAttribute="trailing" id="hgM-ea-rsb"/>
-                                        <constraint firstItem="bOo-IP-flF" firstAttribute="leading" secondItem="qMJ-pf-Jmr" secondAttribute="trailing" constant="10" id="w8v-Vq-P8i"/>
-                                        <constraint firstItem="J9o-P9-yGl" firstAttribute="top" secondItem="SBq-W9-4Vh" secondAttribute="top" id="wUG-JP-4cv"/>
-                                        <constraint firstItem="J9o-P9-yGl" firstAttribute="leading" secondItem="bOo-IP-flF" secondAttribute="trailing" constant="20" id="yUd-zw-Bis"/>
-                                        <constraint firstItem="qMJ-pf-Jmr" firstAttribute="centerY" secondItem="SBq-W9-4Vh" secondAttribute="centerY" id="yyM-6H-clR"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
-                                <connections>
-                                    <outlet property="imageHeader" destination="bOo-IP-flF" id="N1Y-iD-lof"/>
-                                    <outlet property="nameHeader" destination="J9o-P9-yGl" id="krM-OF-I7R"/>
-                                    <outlet property="rotationSectionIcon" destination="qMJ-pf-Jmr" id="5HS-vN-bIb"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="I6H-i5-yC7" customClass="CellTableView" customModule="MoneyKeeper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I6H-i5-yC7" id="Ofb-ff-0P0">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0u-MH-NI3">
-                                            <rect key="frame" x="100" y="0.0" width="314" height="43.666666666666664"/>
+                                            <rect key="frame" x="100" y="0.0" width="314" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -811,11 +732,11 @@ kiện</string>
                         <viewControllerLayoutGuide type="bottom" id="R7C-RJ-aiX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PYl-Oa-er4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333326"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="245"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iHb-Lf-UAa">
-                                <rect key="frame" x="5" y="5" width="404" height="235.33333333333334"/>
+                                <rect key="frame" x="5" y="5" width="404" height="235"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5PM-Op-dlV">
                                         <rect key="frame" x="0.0" y="0.0" width="404" height="43"/>
@@ -1001,10 +922,10 @@ kiện</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="924-0d-ENw">
-                                        <rect key="frame" x="0.0" y="96" width="404" height="43.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="96" width="404" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeS-te-kGp" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="43.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="43"/>
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1024,7 +945,7 @@ kiện</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB9-Ji-FEg" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="43.333333333333343"/>
+                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="43"/>
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1044,7 +965,7 @@ kiện</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoj-R2-pfA" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666669" y="0.0" width="97.000000000000057" height="43.333333333333343"/>
+                                                <rect key="frame" x="204.66666666666669" y="0.0" width="97.000000000000057" height="43"/>
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1064,7 +985,7 @@ kiện</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNI-xb-dfk" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666674" y="0.0" width="97.333333333333314" height="43.333333333333343"/>
+                                                <rect key="frame" x="306.66666666666674" y="0.0" width="97.333333333333314" height="43"/>
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1092,7 +1013,7 @@ kiện</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2Bb-L7-a7W">
-                                        <rect key="frame" x="0.0" y="144.33333333333334" width="404" height="43"/>
+                                        <rect key="frame" x="0.0" y="144" width="404" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83f-b5-pM0" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="43"/>
@@ -1183,7 +1104,7 @@ kiện</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GSF-Af-idG">
-                                        <rect key="frame" x="0.0" y="192.33333333333334" width="404" height="43"/>
+                                        <rect key="frame" x="0.0" y="192" width="404" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwY-8Q-JFR" customClass="ButtonCustom" customModule="MoneyKeeper" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="43"/>
@@ -1369,7 +1290,7 @@ kiện</string>
             <objects>
                 <tableViewController id="ld8-49-PW9" customClass="SideMenuRecords" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KRe-7U-fDt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333331"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="245"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -1379,18 +1300,18 @@ kiện</string>
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kuT-85-sHO" id="Vxh-H5-7FW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Expense" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B60-ok-ggH">
-                                                    <rect key="frame" x="15" y="12.999999999999998" width="65" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15" y="12" width="65" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Khi chi tiêu, cho vay nợ, trả nợ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cq3-o1-xpH">
-                                                    <rect key="frame" x="15" y="33.333333333333329" width="173.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33" width="174" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1403,18 +1324,18 @@ kiện</string>
                                         <rect key="frame" x="0.0" y="60" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MMe-g1-ruV" id="2g1-mq-DSf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VcG-Ka-yLK">
-                                                    <rect key="frame" x="15.000000000000004" y="12.999999999999998" width="56.333333333333336" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15" y="12" width="57" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Khi có khoản thu nhập, thu nợ, vay nợ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wTJ-6G-phh">
-                                                    <rect key="frame" x="15" y="33.333333333333329" width="215.66666666666666" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33" width="216" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1427,18 +1348,18 @@ kiện</string>
                                         <rect key="frame" x="0.0" y="120" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Ga-JV-nqY" id="qe0-qW-xHT">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Transfer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VCG-Y8-xjG">
-                                                    <rect key="frame" x="14.999999999999996" y="12.999999999999998" width="63.666666666666664" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15" y="12" width="64" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Chuyển tiền giữa các tài khoản trong Sổ của bạn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YZ5-MT-yzJ">
-                                                    <rect key="frame" x="15" y="33.333333333333329" width="277.33333333333331" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33" width="278" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1451,18 +1372,18 @@ kiện</string>
                                         <rect key="frame" x="0.0" y="180" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2ju-ac-Bgn" id="tEb-W5-l6l">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Adjustment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PIJ-Oi-C5x">
-                                                    <rect key="frame" x="15" y="12.999999999999998" width="87.333333333333329" height="20.333333333333332"/>
+                                                    <rect key="frame" x="15" y="12" width="88" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.14046949149999999" green="0.54047751430000002" blue="0.38448148970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Tính và ghi số tiền đã chi/thu theo số tiền đang còn." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NAf-wA-CfR">
-                                                    <rect key="frame" x="15" y="33.333333333333329" width="293" height="14.333333333333334"/>
+                                                    <rect key="frame" x="15" y="33" width="293" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1475,7 +1396,7 @@ kiện</string>
                                         <rect key="frame" x="0.0" y="240" width="414" height="10"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rLN-GP-IT1" id="Gri-GS-SV4">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="9.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="9"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

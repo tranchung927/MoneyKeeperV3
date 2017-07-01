@@ -7,9 +7,9 @@
 //
 
 import UIKit
-
+typealias SectionData = (image: UIImage, title: String, expanded: Bool)
 typealias CellData = (image: UIImage, title: String)
-class ExpenseCategoriesTVC: UITableViewController, HeaderTableViewDelegate {
+class ExpenseCategoriesTVC: UITableViewController, ExpandableHeaderViewDelegate {
     var isHeaderSection: Bool = true
     var displayedViewContents : [[CellData]] = []
     let tableViewContents : [[CellData]] = [
@@ -66,16 +66,16 @@ class ExpenseCategoriesTVC: UITableViewController, HeaderTableViewDelegate {
      (#imageLiteral(resourceName: "Hobbies"), "Hobbies")]
     ]
     
-    let tableViewSection: [CellData] = [(#imageLiteral(resourceName: "Food and Dining"), "Food and Dining"),
-                                        (#imageLiteral(resourceName: "Utilities"), "Utilities"),
-                                        (#imageLiteral(resourceName: "Auto & Transport"), "Auto & Transport"),
-                                        (#imageLiteral(resourceName: "Kids"), "Kids"),
-                                        (#imageLiteral(resourceName: "Clothing"), "Clothing"),
-                                        (#imageLiteral(resourceName: "Gifts & Donations"), "Gifts & Donations"),
-                                        (#imageLiteral(resourceName: "Health & Fitness"), "Health & Fitness"),
-                                        (#imageLiteral(resourceName: "Home"), "Home"),
-                                        (#imageLiteral(resourceName: "Entertainment"), "Entertainment"),
-                                        (#imageLiteral(resourceName: "Personal"), "Personal")]
+    var tableViewSection: [Section] = [(Section(image: #imageLiteral(resourceName: "Food and Dining"), title: "Food and Dining", expanded: false)),
+                                       (Section(image: #imageLiteral(resourceName: "Utilities"), title: "Utilities", expanded: false)),
+                                       (Section(image: #imageLiteral(resourceName: "Auto & Transport"), title: "Auto & Transport", expanded: false)),
+                                       (Section(image: #imageLiteral(resourceName: "Kids"), title: "Kids", expanded: false)),
+                                       (Section(image: #imageLiteral(resourceName: "Clothing"), title: "Clothing", expanded: false)),
+                                       (Section(image: #imageLiteral(resourceName: "Gifts & Donations"), title: "Gifts & Donations", expanded: false)),
+                                       (Section(image: #imageLiteral(resourceName: "Health & Fitness"), title: "Health & Fitness", expanded: false)),
+                                       (Section(image: #imageLiteral(resourceName: "Home"), title: "Home", expanded: false)),
+                                       (Section(image: #imageLiteral(resourceName: "Entertainment"), title: "Entertainment", expanded: false)),
+                                       (Section(image: #imageLiteral(resourceName: "Personal"), title: "Personal", expanded: false))]
     override func viewDidLoad() {
         super.viewDidLoad()
         displayedViewContents = tableViewContents
@@ -92,41 +92,39 @@ class ExpenseCategoriesTVC: UITableViewController, HeaderTableViewDelegate {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let isHeaderSesion = indexPath.row == 0
-//        if isHeaderSesion {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "Header") as! HeaderTableView
-//            cell.imageHeader.image = tableViewSection[indexPath.section].image
-//            cell.nameHeader.text = tableViewSection[indexPath.section].title
-//            UIView.animate(withDuration: 0.25, animations: {
-//                cell.rotationSectionIcon.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
-//            })
-//
-//            return cell
-//        } else {
+
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CellTableView
             cell.imageCell.image = displayedViewContents[indexPath.section][indexPath.row].image
             cell.nameCell?.text = displayedViewContents[indexPath.section][indexPath.row].title
             return cell
-//        }
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        if (tableViewSection[indexPath.section].expanded){
+            return 44
+        } else {
+            return 0
+        }
     }
     
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 2
+    }
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = tableView.dequeueReusableCell(withIdentifier: "Header") as! HeaderTableView
-        headerView.imageHeader.image = tableViewSection[section].image
-        headerView.nameHeader.text = tableViewSection[section].title
-        headerView.delegate = self
-        headerView.section = section
-        headerView.tableView = tableView
-        return headerView
+        let header = ExpandableHeaderView()
+        header.customInit(title: tableViewSection[section].title, section: section, delegate: self)
+        return header
     }
-    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 44
     }
-    func tableView(_ tableView: UITableView, didSelectAtHeader section: Int) {
-        isHeaderSection = !isHeaderSection
+    func toggleSection(header: ExpandableHeaderView, section: Int) {
+        tableViewSection[section].expanded = !tableViewSection[section].expanded
+        
+        
+        tableView.beginUpdates()
+        for i in 0 ..< displayedViewContents[section].count {
+            tableView.reloadRows(at: [IndexPath(row: i, section: section)], with: .automatic)
+        }
+        tableView.endUpdates()
     }
 }

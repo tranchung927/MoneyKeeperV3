@@ -93,5 +93,8 @@ extension Expense: UITextFieldDelegate{
         NotificationCenter.default.post(name: NotificationKey.appear, object: nil)
         return true
     }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.resignFirstResponder()
+    }
 }
 

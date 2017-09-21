@@ -160,7 +160,7 @@
         <scene sceneID="sWm-H9-A7Q">
             <objects>
                 <tableViewController storyboardIdentifier="Expense" automaticallyAdjustsScrollViewInsets="NO" id="d24-D4-XGk" customClass="Expense" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qza-sd-uhU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qza-sd-uhU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -641,8 +641,15 @@ kiện</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="93V-fP-ZkX">
+                                <rect key="frame" x="0.0" y="64" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pgw-Mu-zEz"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uNN-91-UFm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="108" width="414" height="628"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -650,9 +657,12 @@ kiện</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="93V-fP-ZkX" secondAttribute="trailing" id="39Y-NH-LiM"/>
                             <constraint firstAttribute="trailing" secondItem="uNN-91-UFm" secondAttribute="trailing" id="9Dg-vX-2OI"/>
                             <constraint firstItem="uNN-91-UFm" firstAttribute="leading" secondItem="PdS-Qi-Hck" secondAttribute="leading" id="JFV-7P-i46"/>
-                            <constraint firstItem="uNN-91-UFm" firstAttribute="top" secondItem="PdS-Qi-Hck" secondAttribute="top" id="d1Z-4f-fWi"/>
+                            <constraint firstItem="uNN-91-UFm" firstAttribute="top" secondItem="93V-fP-ZkX" secondAttribute="bottom" id="uaE-f5-z7s"/>
+                            <constraint firstItem="93V-fP-ZkX" firstAttribute="leading" secondItem="PdS-Qi-Hck" secondAttribute="leading" id="vqB-8M-0NT"/>
+                            <constraint firstItem="93V-fP-ZkX" firstAttribute="top" secondItem="Iez-lT-BXa" secondAttribute="bottom" id="wM4-fw-12C"/>
                             <constraint firstAttribute="bottom" secondItem="uNN-91-UFm" secondAttribute="bottom" id="wpq-jC-0qG"/>
                         </constraints>
                     </view>
@@ -664,7 +674,7 @@ kiện</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1D-IV-RWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3682.608695652174" y="-2142.3913043478265"/>
+            <point key="canvasLocation" x="3682.608695652174" y="-2143.2065217391305"/>
         </scene>
         <!--CalculatorVC-->
         <scene sceneID="QQc-A6-KcO">

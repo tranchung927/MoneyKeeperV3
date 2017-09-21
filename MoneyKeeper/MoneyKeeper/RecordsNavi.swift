@@ -12,7 +12,9 @@ class RecordsNavi: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let textAttributes = [NSForegroundColorAttributeName:UIColor.white]
         navigationBar.tintColor = .white
+        navigationBar.titleTextAttributes = textAttributes
         // Do any additional setup after loading the view.
     }
 

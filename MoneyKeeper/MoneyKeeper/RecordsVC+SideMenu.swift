@@ -9,22 +9,13 @@
 import UIKit
 extension RecordsVC: SideMenuRecordsDelegate {
     
-    func passData(indexOf: Int) {
-        isSideMenuOpen = false
-        pageVC?.jump(toIndex: indexOf)
-    }
     func passedNameTitleMenu(name: String) {
+        isSideMenuOpen = false
         onClickMenu.setTitle(name, for: UIControlState.normal)
     }
 }
 extension RecordsVC {
-    func registerNotificationPageVC(){
-        NotificationCenter.default.addObserver(self, selector:#selector(setName), name: NotificationKey.sideMenu, object: nil)
-    }
-    func setName(notification: Notification) {
-        let name = notification.object as? String
-        onClickMenu.setTitle(name, for: UIControlState.normal)
-    }
+
     func setStageSideMenu(isSideMenuOpen: Bool) {
         if isSideMenuOpen {
             self.sideMenuViewContainer.isHidden = false

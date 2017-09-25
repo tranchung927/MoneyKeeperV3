@@ -15,4 +15,5 @@ struct NotificationKey {
     static let sideMenu = Notification.Name.init("sideMenu")
     static let update = Notification.Name.init("update")
     static let rotation = Notification.Name.init("rotation")
+    static let numberController = Notification.Name.init("numberController")
 }

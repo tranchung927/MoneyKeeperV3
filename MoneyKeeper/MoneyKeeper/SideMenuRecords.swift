@@ -21,10 +21,9 @@ class SideMenuRecords: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath)
         let text = cell?.textLabel?.text
         delegate?.passedNameTitleMenu(name: text!)
-        delegate?.passData(indexOf: indexPath.row)
+        NotificationCenter.default.post(name: NotificationKey.numberController, object: indexPath.row)
     }
 }
 protocol SideMenuRecordsDelegate {
-    func passData(indexOf: Int)
     func passedNameTitleMenu(name: String)
 }

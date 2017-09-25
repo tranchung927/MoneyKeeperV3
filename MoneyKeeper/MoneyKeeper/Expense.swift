@@ -9,11 +9,9 @@
 import UIKit
 
 class Expense: UITableViewController {
-    static var instance: Expense {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: "Expense") as! Expense
-    }
-    let nameCurrent = "Expense"
+    
+    var NUMBER_VIEWCONTROLLER = 0
+    
     @IBOutlet weak var borrowToPay: UIButton!
     @IBOutlet weak var unitRightView: UIView!
     @IBOutlet weak var textFieldCalculator: UITextField!
@@ -23,18 +21,16 @@ class Expense: UITableViewController {
         textFieldCalculator.rightView = unitRightView
         textFieldCalculator.rightViewMode = .always
         textFieldCalculator.delegate = self
-        registerNotificationHideKeyBoard()
-        registerTextField()
+        registerNotification()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NotificationCenter.default.post(name: NotificationKey.sideMenu, object: nameCurrent)
     }
-    func registerTextField(){
+    
+    func registerNotification(){
         NotificationCenter.default.addObserver(self, selector: #selector(getTextFieldData), name: NotificationKey.calculator, object: nil)
-    }
-    func registerNotificationHideKeyBoard(){
         NotificationCenter.default.addObserver(self, selector: #selector(hiddenKeyBoard), name: NotificationKey.hide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(setNumberViewController), name: NotificationKey.numberController, object: nil)
     }
     func hiddenKeyBoard() {
         textFieldCalculator.resignFirstResponder()
@@ -57,7 +53,10 @@ class Expense: UITableViewController {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-    
+    func setNumberViewController(notification: Notification) {
+        NUMBER_VIEWCONTROLLER = notification.object as! Int
+        tableView.reloadData()
+    }
     enum CellIndex : Int {
         case distance0
         case texFieldCalculator
@@ -75,15 +74,38 @@ class Expense: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.row {
-        case CellIndex.texFieldCalculator.rawValue:
-            return 60
-        case CellIndex.lender.rawValue:
-            return borrowToPay.isSelected ? 0 : 55
-        case CellIndex.distance0.rawValue, CellIndex.distance1.rawValue, CellIndex.distance2.rawValue:
-            return 8
+        switch NUMBER_VIEWCONTROLLER {
+        case 0:
+            switch indexPath.row {
+            case CellIndex.texFieldCalculator.rawValue:
+                return 60
+            case CellIndex.lender.rawValue:
+                return borrowToPay.isSelected ? 0 : 55
+            case CellIndex.distance0.rawValue, CellIndex.distance1.rawValue, CellIndex.distance2.rawValue:
+                return 8
+            default:
+                return 55
+            }
+        case 1:
+            switch indexPath.row {
+            case CellIndex.texFieldCalculator.rawValue:
+                return 60
+            case CellIndex.lender.rawValue, CellIndex.borrow.rawValue:
+                return 0
+            case CellIndex.distance0.rawValue, CellIndex.distance1.rawValue, CellIndex.distance2.rawValue:
+                return 8
+            default:
+                return 55
+            }
         default:
-            return 55
+            switch indexPath.row {
+            case CellIndex.texFieldCalculator.rawValue:
+                return 60
+            case CellIndex.distance0.rawValue, CellIndex.distance1.rawValue, CellIndex.distance2.rawValue:
+                return 8
+            default:
+                return 55
+            }
         }
     }
 }

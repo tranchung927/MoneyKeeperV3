@@ -14,8 +14,8 @@ class BaseModelController: NSObject, UIPageViewControllerDataSource {
         let greenVC = GreenVC.instance
         let redVC = RedVC.instance
         let bluVC = BluVC.instance
-        let expense = Expense.instance
-        let menuControllers = [expense, bluVC, redVC, greenVC]
+//        let expense = Expense.instance
+        let menuControllers = [bluVC, redVC, greenVC]
         return menuControllers
     }()
     

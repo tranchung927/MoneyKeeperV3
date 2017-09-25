@@ -10,12 +10,12 @@ import UIKit
 
 struct SegueIdentifier {
     static let sideMenuVC = "SideMenuController"
-    static let pageVC = "RecordsTableViewController"
+    static let expenseVC = "RecordsTableViewController"
 }
 
 class RecordsVC: UIViewController {
     var sideMenuVC: SideMenuRecords?
-    var pageVC: PageVC?
+    var expenseVC: Expense?
     var isSideMenuOpen: Bool = true {
         didSet {
             setStageSideMenu(isSideMenuOpen: isSideMenuOpen)
@@ -34,7 +34,6 @@ class RecordsVC: UIViewController {
         self.bottomKeyBoard.constant = -self.keyBoardContainer.bounds.height
         isSideMenuOpen = false
         registerNotificationAppearKeyBoard()
-        registerNotificationPageVC()
     }
     
     func registerNotificationAppearKeyBoard() {
@@ -49,8 +48,8 @@ class RecordsVC: UIViewController {
      //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier ?? "" {
-        case SegueIdentifier.pageVC:
-            pageVC = segue.destination as? PageVC
+        case SegueIdentifier.expenseVC:
+            expenseVC = segue.destination as? Expense
         case SegueIdentifier.sideMenuVC:
             sideMenuVC = segue.destination as? SideMenuRecords
             sideMenuVC?.delegate = self

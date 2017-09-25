@@ -154,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				F20FDA501EE94BE900180D36 /* PageVC.swift */,
-				F28A350A1EDD7ECA0043D70D /* MenuTab */,
 			);
 			name = PageViewController;
 			sourceTree = "<group>";
@@ -201,6 +200,7 @@
 				F2AA656B1F034DC900E2E64D /* RecordsNavi.swift */,
 				F28A35071EDD7E720043D70D /* KeyBoard */,
 				F23EBD8D1EEA966B005C0318 /* SideMenu */,
+				F28A350A1EDD7ECA0043D70D /* MenuTab */,
 				F27CF35C1EEA12370037F241 /* PageViewController */,
 			);
 			name = ContainerRecords;

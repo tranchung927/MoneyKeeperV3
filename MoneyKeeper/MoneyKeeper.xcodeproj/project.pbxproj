@@ -197,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				F2B4FA9D1EDD75F50032F205 /* Expense.swift */,
-				3B85D7CF1F73678F006115B5 /* ExpenseCategoriesModel.swift */,
 				3B0F2D751F7388ED005C4569 /* ExpenseCategoriesVC.swift */,
 			);
 			name = Expense;
@@ -264,6 +263,7 @@
 		F2EC7C2E1F00ED6C0068C0CB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3B85D7CF1F73678F006115B5 /* ExpenseCategoriesModel.swift */,
 				F2AA65791F0359F200E2E64D /* Service */,
 				F26DA25B1EF374A400351314 /* CalculatorBrain.swift */,
 				3B21CC411F739BA800C65863 /* ModelExpenseCategories.swift */,

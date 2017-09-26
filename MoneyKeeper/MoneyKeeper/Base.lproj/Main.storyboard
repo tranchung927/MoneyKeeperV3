@@ -116,7 +116,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cfP-S4-QtV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.1065591499209404" green="0.72313791513442993" blue="0.70886713266372681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.29363474249839783" green="0.63493806123733521" blue="0.62161749601364136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.28014186024665833" green="0.60806125402450562" blue="0.59455597400665283" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

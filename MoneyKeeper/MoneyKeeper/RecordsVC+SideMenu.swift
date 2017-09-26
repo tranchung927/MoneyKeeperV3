@@ -21,7 +21,7 @@ extension RecordsVC {
             self.sideMenuViewContainer.isHidden = false
         }
         self.corverButton.isHidden = isSideMenuOpen ? false : true
-        UIView.animate(withDuration: 0.35, animations: {
+        UIView.animate(withDuration: 0.15, animations: {
             self.topSideMenu.constant = isSideMenuOpen ? 0 : -self.sideMenuViewContainer.bounds.height
             self.corverButton.alpha = isSideMenuOpen ? 0.35 : 0
             self.view.layoutIfNeeded()},

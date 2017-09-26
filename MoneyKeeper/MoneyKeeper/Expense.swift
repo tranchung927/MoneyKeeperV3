@@ -90,7 +90,18 @@ class Expense: UITableViewController {
             switch indexPath.row {
             case CellIndex.texFieldCalculator.rawValue:
                 return 60
-            case CellIndex.lender.rawValue, CellIndex.borrow.rawValue:
+            case CellIndex.borrow.rawValue, CellIndex.lender.rawValue:
+                return 0
+            case CellIndex.distance0.rawValue, CellIndex.distance1.rawValue, CellIndex.distance2.rawValue:
+                return 8
+            default:
+                return 55
+            }
+        case 2:
+            switch indexPath.row {
+            case CellIndex.texFieldCalculator.rawValue:
+                return 60
+            case CellIndex.lender.rawValue, CellIndex.borrow.rawValue, CellIndex.payee.rawValue, CellIndex.event.rawValue, CellIndex.borrow.rawValue, CellIndex.lender.rawValue:
                 return 0
             case CellIndex.distance0.rawValue, CellIndex.distance1.rawValue, CellIndex.distance2.rawValue:
                 return 8

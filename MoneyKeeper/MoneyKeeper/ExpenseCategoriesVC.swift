@@ -28,9 +28,5 @@ class ExpenseCategoriesVC: UIViewController {
         tableView.delegate = viewModel
         tableView.register(HeaderView.nib, forHeaderFooterViewReuseIdentifier: HeaderView.identifier)
         tableView.register(ExpenseCategoriesCell.nib, forCellReuseIdentifier: ExpenseCategoriesCell.identifier)
-        print(tableView.numberOfSections)
-        for i in viewModel.items {
-            print(i.rowCount)
-        }
     }
 }

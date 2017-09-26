@@ -52,6 +52,6 @@ class HeaderView: UITableViewHeaderFooterView {
     }
 
     func setCollapsed(collapsed: Bool) {
-        arrowLabel?.rotate(collapsed ? 0.0 : .pi)
+        arrowLabel?.rotate(collapsed ? .pi : 0.0)
     }
 }

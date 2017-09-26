@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7w8-MH-tpu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7w8-MH-tpu">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -137,14 +137,6 @@
             </objects>
             <point key="canvasLocation" x="584" y="-1102"/>
         </scene>
-        <!--GreenVC-->
-        <scene sceneID="tRE-ls-ats">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="GreenVC" storyboardName="Records" referencedIdentifier="GreenVC" id="UKY-Pc-de6" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3ud-eP-EyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1002" y="-985"/>
-        </scene>
         <!--Expense-->
         <scene sceneID="FQF-BR-DDo">
             <objects>
@@ -152,22 +144,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4o-6c-CKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1032" y="-1198"/>
-        </scene>
-        <!--RedVC-->
-        <scene sceneID="Bk0-B6-n6O">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RedVC" storyboardName="Records" referencedIdentifier="RedVC" id="hOi-YO-l5S" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sWO-PS-s1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="991" y="-1128"/>
-        </scene>
-        <!--BluVC-->
-        <scene sceneID="lkx-vg-pCj">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="BluVC" storyboardName="Records" referencedIdentifier="BluVC" id="X41-z6-eG9" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eet-3T-Ijd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="991" y="-1060"/>
         </scene>
     </scenes>
     <resources>

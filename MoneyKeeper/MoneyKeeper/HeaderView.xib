@@ -41,7 +41,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hkE-jk-lKG" customClass="ImageView" customModule="MoneyKeeper" customModuleProvider="target">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hkE-jk-lKG">
                             <rect key="frame" x="53" y="7" width="36" height="36"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="hkE-jk-lKG" secondAttribute="height" id="4oO-G1-80N"/>

@@ -10,15 +10,15 @@ import UIKit
 
 class PageVC: UIPageViewController, UIPageViewControllerDelegate {
 
-    var modelController = BaseModelController()
+    var pageViewControllerDataSource = PageViewControllerDataSource()
     var startViewControllerIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         delegate = self
-        dataSource = modelController
-        if let startingViewController: UIViewController = self.modelController.viewControllerAtIndex(startViewControllerIndex) {
+        dataSource = pageViewControllerDataSource
+        if let startingViewController: UIViewController = pageViewControllerDataSource.viewControllerAtIndex(startViewControllerIndex) {
             
             let viewControllers = [startingViewController]
             setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
@@ -35,7 +35,7 @@ class PageVC: UIPageViewController, UIPageViewControllerDelegate {
             return
         }
         let direction : UIPageViewControllerNavigationDirection = toIndex > 0 ? .forward : .reverse
-        if let viewController = modelController.viewControllerAtIndex(toIndex) {
+        if let viewController = pageViewControllerDataSource.viewControllerAtIndex(toIndex) {
             self.setViewControllers([viewController], direction: direction , animated: true, completion: {done in })
         }
     }

@@ -153,6 +153,7 @@
 		F27CF35C1EEA12370037F241 /* PageViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F20FDA521EE94C1300180D36 /* BaseModelController.swift */,
 				F20FDA501EE94BE900180D36 /* PageVC.swift */,
 				F28A350A1EDD7ECA0043D70D /* MenuTab */,
 			);
@@ -300,7 +301,6 @@
 			children = (
 				F2AA65791F0359F200E2E64D /* Service */,
 				F26DA25B1EF374A400351314 /* CalculatorBrain.swift */,
-				F20FDA521EE94C1300180D36 /* BaseModelController.swift */,
 				3B21CC411F739BA800C65863 /* ModelExpenseCategories.swift */,
 			);
 			name = Model;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseModelController: NSObject, UIPageViewControllerDataSource {
+class PageViewControllerDataSource: NSObject, UIPageViewControllerDataSource {
     
     var viewcontrollers: [UIViewController] = {
         let greenVC = GreenVC.instance
@@ -21,7 +21,7 @@ class BaseModelController: NSObject, UIPageViewControllerDataSource {
     
     func viewControllerAtIndex(_ index: Int) -> UIViewController? {
         // Return the data view controller for the given index.
-        if (self.viewcontrollers.count == 0) || (index >= self.viewcontrollers.count) || (index < 0) || (index == NSNotFound){
+        if (viewcontrollers.count == 0) || (index >= viewcontrollers.count) || (index < 0) || (index == NSNotFound){
             return nil
         }
         return viewcontrollers[index]
@@ -33,12 +33,12 @@ class BaseModelController: NSObject, UIPageViewControllerDataSource {
     
     // MARK: - Page View Controller Data Source
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        let index = self.indexOfViewController(viewController)
-        return self.viewControllerAtIndex(index-1)
+        let index = indexOfViewController(viewController)
+        return viewControllerAtIndex(index-1)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        let index = self.indexOfViewController(viewController)
-        return self.viewControllerAtIndex(index+1)
+        let index = indexOfViewController(viewController)
+        return viewControllerAtIndex(index+1)
     }
 }
